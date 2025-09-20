@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector) // Автоматическое определение языка
   .use(initReactI18next) // Модуль инициализации
   .init({
-    fallbackLng: 'de', // Язык по умолчанию
+    fallbackLng: 'ru', // Язык по умолчанию
     debug: true, // Включение отладки
     detection: {
       order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
