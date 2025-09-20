@@ -6,8 +6,10 @@ import {
   ContainerFoto1,
   ContainerFoto234,
   ContainerP,
+  ContainerPMobile,
   ContainerPTablett,
   Foto1,
+  Foto1Mobile,
   Foto2,
   HomeContainer,
   Section1,
@@ -66,6 +68,13 @@ function Home() {
               <StyledP>{t('home.section1Tablett.p5')}</StyledP>
               <StyledP>{t('home.section1Tablett.p6')}</StyledP>
             </ContainerPTablett>
+            <ContainerPMobile>
+              <StyledP>{t('home.section1Mobile.p1')}</StyledP>
+              <StyledP>{t('home.section1Mobile.p2')}</StyledP>
+              <StyledP>{t('home.section1Mobile.p3')}</StyledP>
+              <StyledP>{t('home.section1Mobile.p4')}</StyledP>
+              <StyledP>{t('home.section1Mobile.p5')}</StyledP>
+            </ContainerPMobile>
             <ButtonContainerTablett>
               <Button name={t('home.section1.button1')} bgColor />
               <Button name={t('home.section1.button2')} colorText />
@@ -83,6 +92,7 @@ function Home() {
         <Section1Foto>
           <ContainerFoto1>
             <Foto1 src="/src/assets/23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp" />
+            <Foto1Mobile src="/src/assets/фотоMobile.webp" />
           </ContainerFoto1>
           <ContainerFoto234>
             <Foto2 src="/src/assets/1.webp" />

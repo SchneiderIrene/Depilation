@@ -19,6 +19,7 @@ export const Section1 = styled.section`
 
   @media (max-width: 375px) {
     flex-direction: column;
+   
   }
 `;
 
@@ -38,6 +39,7 @@ export const Section1Info = styled.div`
     gap: 53px;
   }
   @media (max-width: 375px) {
+     
   }
 `;
 
@@ -45,6 +47,11 @@ export const StyledTitle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.4vw;
+
+    @media (max-width: 375px) {
+  gap: 25px;
+   
+  }
 `;
 
 export const StyledH1 = styled.h1`
@@ -59,7 +66,8 @@ export const StyledH1 = styled.h1`
   }
 
   @media (max-width: 375px) {
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: -10px;
   }
 `;
 export const StyledH1Tablett = styled.h1`
@@ -89,7 +97,7 @@ export const StyledH2 = styled.h2`
   }
 
     @media (max-width: 375px) {
-   font-size: 19px;
+   font-size: 1.1rem;
   }
 `;
 
@@ -115,13 +123,26 @@ export const ContainerP = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+
+
 `;
 export const ContainerPTablett = styled.div`
   display: none;
   @media (max-width: 768px) {
     display: block;
   }
+        @media (max-width: 375px) {
+    display: none;
+  }
 `;
+
+export const ContainerPMobile = styled.div`
+display: none;
+margin-top: -25px;
+        @media (max-width: 375px) {
+    display: block;
+  }
+`
 
 export const StyledP = styled.p`
   font-size: 1.55rem;
@@ -133,6 +154,10 @@ export const StyledP = styled.p`
   @media (max-width: 768px) {
     font-size: 22px;
     line-height: 1.23;
+  }
+
+    @media (max-width: 375px) {
+    font-size: 17px;
   }
 `;
 export const ButtonContainer = styled.div`
@@ -181,6 +206,8 @@ export const Section1FotoMobile = styled.div`
   @media (max-width: 375px) {
     display: flex;
     flex-direction: column;
+    margin-top: -40px;
+    gap: 16px;
   }
 `;
 
@@ -196,12 +223,29 @@ export const Foto1 = styled.img`
     width: 300px;
     height: 327px;
   }
+    @media (max-width: 376px) {
+    display: none;
+  }
 `;
+
+export const Foto1Mobile = styled.img`
+display: none;
+
+    @media (max-width: 375px) {
+    display: block;
+    width: 345px;
+     height: auto;
+  }
+`
 
 export const Foto2 = styled.img`
   @media (max-width: 768px) {
     width: 92px;
     height: 82px;
+  }
+    @media (max-width: 375px) {
+    width: 97px;
+    height: 92px;
   }
 `;
 export const ContainerFoto234 = styled.div`
@@ -213,5 +257,8 @@ export const ContainerFoto234 = styled.div`
   @media (max-width: 768px) {
     flex-direction: row;
     gap: 12px;
+  }
+    @media (max-width: 375px) {
+    gap: 10px;
   }
 `;

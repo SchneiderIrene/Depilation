@@ -18,6 +18,9 @@ export const Container = styled.div`
     padding: 0 32px;
   }
 
+  @media (max-width: 375px) {
+    padding:  0 20px;
+  }
 
 `;
 export const Header = styled.header`
@@ -35,6 +38,10 @@ export const Header = styled.header`
 
   @media (max-width: 768px) {
     padding: 20px 0;
+  }
+
+    @media (max-width: 375px) {
+    padding: 20px 10px;
   }
 `;
 
@@ -97,6 +104,10 @@ export const StyledNavLink = styled(NavLink)`
 
 export const LogoImg = styled.img`
   width:100px;
+
+     @media (max-width: 375px) {
+   width: 90px;
+  }
 `;
 
 export const AddressIconContainer = styled.div`
@@ -158,7 +169,7 @@ display: none;
 
   @media (max-width: 375px) {
     display: block;
-    width: 40px;
+    width: 35px;
   }
 `
 
