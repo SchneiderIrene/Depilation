@@ -47,6 +47,7 @@ function Home() {
             <Section1FotoMobile>
               <ContainerFoto1>
                 <Foto1 src="/src/assets/23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp" />
+                  <Foto1Mobile src="/src/assets/FotoMobile.webp" />
               </ContainerFoto1>
               <ContainerFoto234>
                 <Foto2 src="/src/assets/1.webp" />
@@ -92,7 +93,6 @@ function Home() {
         <Section1Foto>
           <ContainerFoto1>
             <Foto1 src="/src/assets/23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp" />
-            <Foto1Mobile src="/src/assets/фотоMobile.webp" />
           </ContainerFoto1>
           <ContainerFoto234>
             <Foto2 src="/src/assets/1.webp" />

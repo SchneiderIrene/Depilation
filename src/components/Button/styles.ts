@@ -33,6 +33,8 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
     color: ${({ colorText }) => (colorText ? '#AE9C96' : '#F5F5F5')};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
+    height: 50px;
+    font-size: 15px;
   }
 `;

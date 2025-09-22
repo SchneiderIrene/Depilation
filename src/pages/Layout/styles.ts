@@ -7,14 +7,13 @@ export const LayoutComponent = styled.div`
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  flex: 1;
+  
 `;
 export const Container = styled.div`
   width: 100%;
   max-width: 1440px; /*oграничение по макету*/
-  margin: 0 auto; /* центрирование */
+  margin: 0 auto;
   /* padding: 0 100px; внутренние отступы */
-  
 
 
   @media (max-width: 768px) {
@@ -52,12 +51,16 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 0 100px; 
-@media (max-width: 1450px) {
+
+    @media (max-width: 768px) {
+    /* gap: 20px; */
     
   }
-    @media (max-width: 768px) {
+        @media (max-width: 375px) {
+    padding: 0;
     gap: 20px;
-    
+    justify-content: flex-start;
+  
   }
 
 `;
@@ -72,6 +75,8 @@ export const LogoMenuContainer = styled.div`
 
     @media (max-width: 375px) {
     gap: 0px;
+   
+
   }
 
 `;
@@ -111,7 +116,7 @@ export const LogoImg = styled.img`
   width:100px;
 
      @media (max-width: 375px) {
-   width: 90px;
+   width: 75px;
   }
 `;
 
@@ -174,7 +179,7 @@ display: none;
 
   @media (max-width: 375px) {
     display: block;
-    width: 35px;
+    width: 30px;
   }
 `
 
@@ -183,7 +188,7 @@ export const Main = styled.main`
   flex-direction: column;
   background-color: #fefefe;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
     @media (max-width: 768px) {
     padding: 100px 0;

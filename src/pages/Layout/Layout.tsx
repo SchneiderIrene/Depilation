@@ -77,7 +77,7 @@ function Layout({ children }: LayoutProps) {
             </Main>
       <Footer>
         <Container>
-            дддддддддддд
+            
             </Container>
             </Footer>
     </LayoutComponent>

@@ -8,7 +8,7 @@ export const LanguageSwitcherIcon = styled.svg`
   transition: color 0.3s;
 
     @media (max-width: 375px) {
-    width: 35px;
+    width: 30px;
   }
 
   &:hover {
