@@ -90,6 +90,20 @@ export const MenuContainer = styled.div`
   }
 
 `;
+export const MobileMenuContainer = styled.div`
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 30px;
+
+`
+
+export const CloseIcon  = styled.img`
+width: 28px;
+color: #757975;
+margin-left: 70px;
+`
+
 export const StyledNavLink = styled(NavLink)`
   font-family: LatoRegular, sans-serif;
   text-decoration: none;
@@ -111,6 +125,20 @@ export const StyledNavLink = styled(NavLink)`
     display: none;
   }
 `;
+
+export const StyledNavLinkMobileMenu = styled(NavLink)`
+  font-family: LatoRegular, sans-serif;
+  text-decoration: none;
+  color: #1d1715;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  font-feature-settings:
+    'liga' 1,
+    'kern' 1;
+  letter-spacing: 0.01em;
+  `
 
 export const LogoImg = styled.img`
   width:100px;
