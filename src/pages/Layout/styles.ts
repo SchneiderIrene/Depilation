@@ -4,15 +4,18 @@ import { NavLink } from 'react-router-dom';
 export const LayoutComponent = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   width: 100%;
   flex: 1;
 `;
 export const Container = styled.div`
   width: 100%;
-  max-width: 1440px; /* ограничение по макету */
+  max-width: 1440px; /*oграничение по макету*/
   margin: 0 auto; /* центрирование */
-  padding: 0 100px; /* внутренние отступы */
+  /* padding: 0 100px; внутренние отступы */
+  
+
 
   @media (max-width: 768px) {
     padding: 0 32px;
@@ -25,16 +28,13 @@ export const Container = styled.div`
 `;
 export const Header = styled.header`
   background-color: #f1ece6;
-  width: 100vw;
+  width: 100%;
   padding: 25px 0;
   position: sticky;
   top: 0;
   z-index: 10;
 
-    @media (max-width: 1200px) {
-    width: 100%;
-    
-  }
+
 
   @media (max-width: 768px) {
     padding: 20px 0;
@@ -47,12 +47,17 @@ export const Header = styled.header`
 
 export const HeaderContainer = styled.div`
   display: flex;
-  gap: 153px;
+  /* gap: 153px; */
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-
+  padding: 0 100px; 
+@media (max-width: 1450px) {
+    
+  }
     @media (max-width: 768px) {
     gap: 20px;
+    
   }
 
 `;
