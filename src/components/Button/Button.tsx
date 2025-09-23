@@ -2,10 +2,10 @@ import { ButtonComponent } from './styles';
 import type { ButtonProps } from './types';
 
 
-function Button({ name, type = 'button', onButtonClick, bgColor, colorText }: ButtonProps) {
+function Button({ name, type = 'button', onButtonClick, bgColor, colorText, children }: ButtonProps) {
   return (
     <ButtonComponent type={type} onClick={onButtonClick}  bgColor={bgColor} colorText={colorText}>
-      {name}
+      {name} {children}
     </ButtonComponent>
   );
 }

@@ -5,7 +5,6 @@ import {
   AddressP,
   CloseIcon,
   ContactContainer,
-  Container,
   Footer,
   Header,
   HeaderContainer,
@@ -56,7 +55,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <LayoutComponent>
       <Header>
-        <Container>
+       
           <HeaderContainer>
             <LogoMenuContainer>
               <LogoImg src="/src/assets/logo.png"></LogoImg>
@@ -80,7 +79,6 @@ function Layout({ children }: LayoutProps) {
                   <LanguageSwitcher />
                   <MobileMenuIcon src="/src/assets/Menu 21.svg" onClick={handleOpenModal} />
                   <ModalMenu isOpen={isModalOpen} onClose={handleCloseModal}>
-                    
                     <MobileMenuContainer>
                       <CloseIcon src='/src/assets/close.png' onClick={handleCloseModal}/>
                       <StyledNavLinkMobileMenu to={''}>{t('header.services')}</StyledNavLinkMobileMenu>
@@ -92,13 +90,13 @@ function Layout({ children }: LayoutProps) {
               </AddressIconContainer>
             </ContactContainer>
           </HeaderContainer>
-        </Container>
+    
       </Header>
       <Main>
-        <Container>{children}</Container>
+        {children}
       </Main>
       <Footer>
-        <Container></Container>
+       
       </Footer>
     </LayoutComponent>
   );

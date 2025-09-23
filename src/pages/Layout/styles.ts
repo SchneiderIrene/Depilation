@@ -5,64 +5,35 @@ export const LayoutComponent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   width: 100%;
-  
 `;
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1440px; /*oграничение по макету*/
-  margin: 0 auto;
-  /* padding: 0 100px; внутренние отступы */
 
-
-  @media (max-width: 768px) {
-    padding: 0 32px;
-  }
-
-  @media (max-width: 375px) {
-    padding:  0 20px;
-  }
-
-`;
 export const Header = styled.header`
   background-color: #f1ece6;
   width: 100%;
-  padding: 25px 0;
   position: sticky;
   top: 0;
   z-index: 10;
 
-
-
   @media (max-width: 768px) {
-    padding: 20px 0;
-  }
-
-    @media (max-width: 375px) {
-    padding: 20px 10px;
   }
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
-  /* gap: 153px; */
   align-items: center;
   justify-content: space-between;
+  /* gap: 154px; */
   width: 100%;
-  padding: 0 100px; 
+  padding: 20px clamp(20px, 10.6vw, 200px);
 
-    @media (max-width: 768px) {
-    /* gap: 20px; */
-    
-  }
-        @media (max-width: 375px) {
-    padding: 0;
-    gap: 20px;
-    justify-content: flex-start;
-  
-  }
 
+  @media (max-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media (max-width: 375px) {
+  }
 `;
 export const LogoMenuContainer = styled.div`
   display: flex;
@@ -73,36 +44,31 @@ export const LogoMenuContainer = styled.div`
     gap: 20px;
   }
 
-    @media (max-width: 375px) {
+  @media (max-width: 375px) {
     gap: 0px;
-   
-
   }
-
 `;
 export const MenuContainer = styled.div`
   display: flex;
- 
+
   gap: 28px;
 
   @media (max-width: 768px) {
     gap: 25px;
   }
-
 `;
 export const MobileMenuContainer = styled.div`
-display: flex;
-flex-direction: column;
-gap: 20px;
-padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+`;
 
-`
-
-export const CloseIcon  = styled.img`
-width: 28px;
-color: #757975;
-margin-left: 70px;
-`
+export const CloseIcon = styled.img`
+  width: 28px;
+  color: #757975;
+  margin-left: 70px;
+`;
 
 export const StyledNavLink = styled(NavLink)`
   font-family: LatoRegular, sans-serif;
@@ -138,14 +104,10 @@ export const StyledNavLinkMobileMenu = styled(NavLink)`
     'liga' 1,
     'kern' 1;
   letter-spacing: 0.01em;
-  `
+`;
 
 export const LogoImg = styled.img`
-  width:100px;
-
-     @media (max-width: 375px) {
-   width: 75px;
-  }
+  width: 100px;
 `;
 
 export const AddressIconContainer = styled.div`
@@ -179,16 +141,15 @@ export const ContactContainer = styled.div`
   @media (max-width: 768px) {
     gap: 20px;
   }
-
-
 `;
 
 export const AddressContainer = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 8px;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -197,31 +158,29 @@ export const IconContainer = styled.div`
   display: flex;
   gap: 20px;
 
-      @media (max-width: 375px) {
+  @media (max-width: 375px) {
     gap: 10px;
   }
 `;
 
 export const MobileMenuIcon = styled.img`
-display: none;
+  display: none;
 
   @media (max-width: 375px) {
     display: block;
-    width: 30px;
   }
-`
+`;
 
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
-  background-color: #fefefe;
   width: 100%;
   /* min-height: 100vh; */
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 100px 0;
   }
-    @media (max-width: 375px) {
+  @media (max-width: 375px) {
     padding: 20px 0;
   }
 `;
@@ -229,7 +188,7 @@ export const Main = styled.main`
 export const Footer = styled.footer`
   display: flex;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 100px 0;
   }
 `;

@@ -5,32 +5,29 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding: 0 100px; 
-
-
-    @media (max-width: 375px) {
-    padding: 0;
-  }
+  align-items: center;
+ 
 `;
+
 
 export const Section1 = styled.section`
   display: flex;
   align-items: center;
   gap: 2.2vw;
+   padding: 0 clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
+width: 100%;
 
-
-    @media (max-width: 1370px) {
-    justify-content: space-between;
+    @media (max-width: 768px) {
+      padding-left: 32px;
+    padding-right: 32px;
+     padding-bottom: 60px;
   }
-
-  @media (max-width: 768px) {
-    align-items: start;
-    gap: 53px;
-  }
+  
 
   @media (max-width: 375px) {
     flex-direction: column;
-   
+  padding-right: 16px;
+ 
   }
 `;
 
@@ -77,7 +74,7 @@ export const StyledH1 = styled.h1`
   }
 
   @media (max-width: 375px) {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: -10px;
   }
 `;
@@ -89,6 +86,8 @@ export const StyledH1Tablett = styled.h1`
   letter-spacing: 0.02em;
   display: none;
   margin-top: -50px;
+  padding-left: 32px;
+    padding-right: 32px;
 
   @media (min-width: 376px) and (max-width: 768px) {
     display: block;
@@ -108,7 +107,7 @@ export const StyledH2 = styled.h2`
   }
 
     @media (max-width: 375px) {
-   font-size: 15px;
+   font-size: 19px;
   }
 `;
 
@@ -168,7 +167,7 @@ export const StyledP = styled.p`
   }
 
     @media (max-width: 375px) {
-    font-size: 14px;
+   font-size: 18px;
   }
 `;
 export const ButtonContainer = styled.div`
@@ -196,7 +195,7 @@ export const ButtonContainerTablett = styled.div`
     margin-top: -23px;
   }
     @media (max-width: 375px) {
-    width: 259px;
+    width: 335px;
   }
 `;
 
@@ -221,7 +220,7 @@ export const Section1FotoMobile = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: -25px;
-    gap: 16px;
+    gap: 35px;
   }
 `;
 
@@ -247,8 +246,8 @@ display: none;
 
     @media (max-width: 375px) {
     display: flex;
-    width: 258px;
-     height: auto;
+    width: 335px;
+     height: 345px;
   }
 `
 
@@ -258,13 +257,14 @@ export const Foto2 = styled.img`
     height: 82px;
   }
     @media (max-width: 375px) {
-    width: 80px;
-    height: 76px;
+    width: 105px;
+    height: 100px;
   }
 `;
 export const ContainerFoto234 = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 30px;
   margin-top: 4.9vw;
 
@@ -277,3 +277,88 @@ export const ContainerFoto234 = styled.div`
      margin-top: 10px;
   }
 `;
+
+export const Section2 = styled.section`
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 80px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
+width: 100%;
+
+    @media (max-width: 768px) {
+      padding-left: 32px;
+    padding-right: 32px;
+     padding-bottom: 60px;
+  }
+  
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+  padding-right: 32px;
+  padding-top: 60px;
+  }
+background-color: #F1ECE6;
+`
+export const Section2TitleContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 40px;
+
+    @media (max-width: 375px) {
+   gap: 20px;
+  }
+`
+export const StyledSection2H2 = styled.h2`
+  font-size: 38px;
+  font-family: AbrilFatface-Regulark, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.0em;
+
+
+    @media (max-width: 375px) {
+   font-size: 22px;
+  }
+`
+export const StyledSection2P = styled.p`
+font-size: 25px;
+  font-family: LatoLight, sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+
+     @media (max-width: 768px) {
+     line-height: 0.6;
+  }
+
+    @media (max-width: 375px) {
+   font-size: 18px;
+   line-height: 1.2;
+  }
+`
+export const CardContainer = styled.div`
+display: flex;
+justify-content: center;
+padding-top: 50px;
+gap: 50px;
+width: 100%;
+
+     @media (max-width: 768px) {
+     width: 595px;
+     display: grid;
+     grid-template-columns: repeat(2, 273px);
+  }
+
+   @media (max-width: 375px) {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 60px;
+    width: 100%;
+   
+     
+  }
+`

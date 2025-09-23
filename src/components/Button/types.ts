@@ -1,11 +1,12 @@
 type ButtonType = "button" | "submit" | "reset" | undefined
 
 export interface ButtonProps {
-    name: string,
+    name?: React.ReactNode,
     type?: ButtonType,
     onButtonClick?: () => void,
     bgColor?: boolean,
-    colorText?:  boolean 
+    colorText?:  boolean,
+    children?: React.ReactNode;
   }
   
 

@@ -13,7 +13,7 @@ export const ModalOverlay = styled.div`
 export const ModalContent = styled.div`
   position: relative;
   top: 17%;
-  left: 57%;
+  left: 78%;
   transform-origin: center;
   width: 151px;
   height: 215px;

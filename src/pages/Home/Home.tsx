@@ -3,6 +3,7 @@ import {
   ButtonBox,
   ButtonContainer,
   ButtonContainerTablett,
+  CardContainer,
   ContainerFoto1,
   ContainerFoto234,
   ContainerP,
@@ -17,14 +18,19 @@ import {
   Section1FotoMobile,
   Section1Info,
   Section1InfoText,
+  Section2,
+  Section2TitleContainer,
   StyledH1,
   StyledH1Tablett,
   StyledH2,
   StyledP,
+  StyledSection2H2,
+  StyledSection2P,
   StyledSpan,
   StyledTitle,
 } from './styles';
 import Button from '../../components/Button/Button';
+import Card from '../../components/Card/Card';
 
 function Home() {
   const { t } = useTranslation();
@@ -47,7 +53,7 @@ function Home() {
             <Section1FotoMobile>
               <ContainerFoto1>
                 <Foto1 src="/src/assets/23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp" />
-                  <Foto1Mobile src="/src/assets/FotoMobile.webp" />
+                <Foto1Mobile src="/src/assets/FotoMobile.webp" />
               </ContainerFoto1>
               <ContainerFoto234>
                 <Foto2 src="/src/assets/1.webp" />
@@ -101,6 +107,48 @@ function Home() {
           </ContainerFoto234>
         </Section1Foto>
       </Section1>
+      <Section2>
+        <Section2TitleContainer>
+          <StyledSection2H2>{t('home.section2.h2')}</StyledSection2H2>
+          <StyledSection2P>
+            {t('home.section2.p1')}
+            <StyledSpan>
+              <br></br>
+            </StyledSpan>
+            {t('home.section2.p2')}
+          </StyledSection2P>
+        </Section2TitleContainer>
+        <CardContainer>
+          <Card
+            title={t('card.card1.title')}
+            description={`${t('card.card1.description')}\n${t('card.card1.description_1')}`}
+            srcImg="/src/assets/ServiceFoto1.webp"
+            nameButton1={t('card.button1')}
+            nameButton2={t('card.button2')}
+          ></Card>
+          <Card
+            title={t('card.card2.title')}
+            description={t('card.card2.description')}
+            srcImg="/src/assets/ServiceFoto2.webp"
+            nameButton1={t('card.button1')}
+            nameButton2={t('card.button2')}
+          ></Card>
+          <Card
+            title={t('card.card3.title')}
+            description={t('card.card3.description')}
+            srcImg="/src/assets/ServiceFoto3.webp"
+            nameButton1={t('card.button1')}
+            nameButton2={t('card.button3')}
+          ></Card>
+          <Card
+            title={t('card.card4.title')}
+            description={t('card.card4.description')}
+            srcImg="/src/assets/ServiceFoto4.webp"
+            nameButton1={t('card.button4')}
+            nameButton2={t('card.button5')}
+          ></Card>
+        </CardContainer>
+      </Section2>
     </HomeContainer>
   );
 }
