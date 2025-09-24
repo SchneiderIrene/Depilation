@@ -1,9 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import {
+  AboutMeDescription,
+  AboutMeTitle,
   ButtonBox,
+  ButtonBoxSection3,
+  ButtonBoxSection3Tablett,
   ButtonContainer,
   ButtonContainerTablett,
   CardContainer,
+  ContainerAboutMe,
+  ContainerAboutMeText,
   ContainerFoto1,
   ContainerFoto234,
   ContainerP,
@@ -12,6 +18,9 @@ import {
   Foto1,
   Foto1Mobile,
   Foto2,
+  FotoAboutMe,
+  FotoAboutMeTablett,
+  FotoButtonContainerTablett,
   HomeContainer,
   Section1,
   Section1Foto,
@@ -20,6 +29,8 @@ import {
   Section1InfoText,
   Section2,
   Section2TitleContainer,
+  Section3,
+  Section3TitleContainer,
   StyledH1,
   StyledH1Tablett,
   StyledH2,
@@ -27,6 +38,8 @@ import {
   StyledSection2H2,
   StyledSection2P,
   StyledSpan,
+  StyledSpanDesktop,
+  StyledSpanMobile,
   StyledTitle,
 } from './styles';
 import Button from '../../components/Button/Button';
@@ -83,16 +96,16 @@ function Home() {
               <StyledP>{t('home.section1Mobile.p5')}</StyledP>
             </ContainerPMobile>
             <ButtonContainerTablett>
-              <Button name={t('home.section1.button1')} bgColor />
-              <Button name={t('home.section1.button2')} colorText />
+              <Button name={t('home.button1')} bgColor />
+              <Button name={t('home.button2')} colorText />
             </ButtonContainerTablett>
           </Section1InfoText>
           <ButtonContainer>
             <ButtonBox>
-              <Button name={t('home.section1.button1')} bgColor />
+              <Button name={t('home.button1')} bgColor />
             </ButtonBox>
             <ButtonBox>
-              <Button name={t('home.section1.button2')} colorText />
+              <Button name={t('home.button2')} colorText />
             </ButtonBox>
           </ButtonContainer>
         </Section1Info>
@@ -149,6 +162,75 @@ function Home() {
           ></Card>
         </CardContainer>
       </Section2>
+      <Section3>
+        <Section3TitleContainer>
+          <StyledSection2H2>{t('home.section3.h2')}</StyledSection2H2>
+          <StyledSection2P>
+            {t('home.section3.p1')}
+            <StyledSpan>
+              <br></br>
+            </StyledSpan>
+            <StyledSpanMobile/>
+            {t('home.section3.p2')}
+          </StyledSection2P>
+          <ContainerAboutMe>
+            <FotoAboutMe src="/src/assets/FotoAboutMe.webp" />
+            <FotoButtonContainerTablett>
+            <FotoAboutMeTablett src="/src/assets/FotoAboutMeTablett.webp" />
+            <ButtonBoxSection3Tablett>
+                <Button bgColor name={t('home.button1')} />
+                <Button colorText name={t('home.button2')} />
+              </ButtonBoxSection3Tablett>
+            </FotoButtonContainerTablett>
+            
+            <ContainerAboutMeText>
+              <AboutMeTitle>{t('home.section3.h2Description')}</AboutMeTitle>
+              
+
+              
+              
+              <AboutMeDescription>
+                {t('home.section3.text1')}
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text1_1')}
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text1_2')}
+              </AboutMeDescription>
+              <AboutMeDescription>
+                {t('home.section3.text2')}
+                <StyledSpanDesktop><br></br></StyledSpanDesktop>
+                {t('home.section3.text2D')}
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text2_1')}
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text2_2')}
+                <StyledSpanDesktop><br></br></StyledSpanDesktop>
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text2_3')}
+              </AboutMeDescription>
+              <AboutMeDescription>
+                {t('home.section3.text3')}
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text3_1')}
+                <StyledSpan />
+                <StyledSpanMobile/>
+                {t('home.section3.text3_2')}
+                </AboutMeDescription>
+              <ButtonBoxSection3>
+                <Button bgColor name={t('home.button1')} />
+                <Button colorText name={t('home.button2')} />
+              </ButtonBoxSection3>
+              
+            </ContainerAboutMeText>
+          </ContainerAboutMe>
+        </Section3TitleContainer>
+      </Section3>
     </HomeContainer>
   );
 }
