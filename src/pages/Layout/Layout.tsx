@@ -44,14 +44,8 @@ import { StyledSpanMobile } from 'pages/Home/styles';
 import { HashLink } from 'react-router-hash-link';
 
 function Layout({ children }: LayoutProps) {
-  // const navigate = useNavigate();
-  // const location = useLocation();
+
   const { t } = useTranslation();
-
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
