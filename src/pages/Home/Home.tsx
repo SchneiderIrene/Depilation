@@ -57,7 +57,7 @@ import Button from 'components/Button/Button';
 import Card from 'components/Card/Card';
 import Carousel from 'components/Carousel/Carousel';
 import IconSVG from 'components/IconSVG/IconSVG';
-import { IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp } from 'assets/index';
+import { Foto, FotoAM, FotoAMTablett, FotoImg1, FotoImg2, FotoImg3, FotoM, IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp, ServiceImg1, ServiceImg2, ServiceImg3, ServiceImg4 } from 'assets/index';
 import Map from 'components/Map/Map';
 
 function Home() {
@@ -80,13 +80,13 @@ function Home() {
             </StyledTitle>
             <Section1FotoMobile>
               <ContainerFoto1>
-                <Foto1 src="/src/assets/23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp" />
-                <Foto1Mobile src="/src/assets/FotoMobile.webp" />
+                <Foto1 src={Foto} />
+                <Foto1Mobile src={FotoM} />
               </ContainerFoto1>
               <ContainerFoto234>
-                <Foto2 src="/src/assets/1.webp" />
-                <Foto2 src="/src/assets/3.webp" />
-                <Foto2 src="/src/assets/4.webp" />
+                <Foto2 src={FotoImg1} />
+                <Foto2 src={FotoImg2} />
+                <Foto2 src={FotoImg3} />
               </ContainerFoto234>
             </Section1FotoMobile>
             <ContainerP>
@@ -126,12 +126,12 @@ function Home() {
         </Section1Info>
         <Section1Foto>
           <ContainerFoto1>
-            <Foto1 src="/src/assets/23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp" />
+            <Foto1 src={Foto} />
           </ContainerFoto1>
           <ContainerFoto234>
-            <Foto2 src="/src/assets/1.webp" />
-            <Foto2 src="/src/assets/3.webp" />
-            <Foto2 src="/src/assets/4.webp" />
+            <Foto2 src={FotoImg1} />
+                <Foto2 src={FotoImg2} />
+                <Foto2 src={FotoImg3} />
           </ContainerFoto234>
         </Section1Foto>
       </Section1>
@@ -150,28 +150,28 @@ function Home() {
           <Card
             title={t('card.card1.title')}
             description={`${t('card.card1.description')}\n${t('card.card1.description_1')}`}
-            srcImg="/src/assets/ServiceFoto1.webp"
+            srcImg={ServiceImg1}
             nameButton1={t('card.button1')}
             nameButton2={t('card.button2')}
           ></Card>
           <Card
             title={t('card.card2.title')}
             description={t('card.card2.description')}
-            srcImg="/src/assets/ServiceFoto2.webp"
+            srcImg={ServiceImg2}
             nameButton1={t('card.button1')}
             nameButton2={t('card.button2')}
           ></Card>
           <Card
             title={t('card.card3.title')}
             description={t('card.card3.description')}
-            srcImg="/src/assets/ServiceFoto3.webp"
+            srcImg={ServiceImg3}
             nameButton1={t('card.button1')}
             nameButton2={t('card.button3')}
           ></Card>
           <Card
             title={t('card.card4.title')}
             description={t('card.card4.description')}
-            srcImg="/src/assets/ServiceFoto4.webp"
+            srcImg={ServiceImg4}
             nameButton1={t('card.button4')}
             nameButton2={t('card.button5')}
           ></Card>
@@ -189,9 +189,9 @@ function Home() {
             {t('home.section3.p2')}
           </StyledSection2P>
           <ContainerAboutMe>
-            <FotoAboutMe src="/src/assets/FotoAboutMe.webp" />
+            <FotoAboutMe src={FotoAM} />
             <FotoButtonContainerTablett>
-              <FotoAboutMeTablett src="/src/assets/FotoAboutMeTablett.webp" />
+              <FotoAboutMeTablett src={FotoAMTablett} />
               <ButtonBoxSection3Tablett>
                 <Button bgColor name={t('home.button1')} />
                 <Button colorText name={t('home.button2')} />

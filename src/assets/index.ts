@@ -1,5 +1,28 @@
 export { default as Logo } from './logo.png';
 export { default as MapsIcon } from './icon maps.png';
+export { default as Foto } from './23a160ea-0f9b-4bef-ae5c-69a0f633d048 3.webp';
+export { default as FotoM } from './FotoMobile.webp';
+export { default as FotoImg1 } from './1.webp';
+export { default as FotoImg2 } from './3.webp';
+export { default as FotoImg3 } from './4.webp';
+export { default as ServiceImg1 } from './ServiceFoto1.webp';
+export { default as ServiceImg2 } from './ServiceFoto2.webp';
+export { default as ServiceImg3 } from './ServiceFoto3.webp';
+export { default as ServiceImg4 } from './ServiceFoto4.webp';
+export { default as FotoAM } from './FotoAboutMe.webp';
+export { default as FotoAMTablett } from './FotoAboutMeTablett.webp';
+export { default as Certificate1 } from './certificate1.png';
+export { default as Certificate2 } from './certificate2.png';
+export { default as Certificate3 } from './certificate3.png';
+export { default as Certificate4 } from './certificate4.png';
+export { default as Certificate5 } from './certificate5.png';
+export { default as Certificate6 } from './certificate6.png';
+export { default as Certificate7 } from './certificate7.png';
+export { default as Certificate8 } from './certificate8.png';
+export { default as Certificate9 } from './certificate9.png';
+export { default as Certificate10 } from './certificate10.png';
+export { default as Certificate11 } from './certificate11.png';
+export { default as Certificate12 } from './certificate12.png';
 
 
 export const IconTelegram =
