@@ -33,9 +33,8 @@ import {
   StyledHashLinkF,
   StyledHashLinkMobileMenu,
 } from './styles';
-// import { useLocation, useNavigate } from 'react-router-dom';
 import IconSVG from 'components/IconSVG/IconSVG';
-import { IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp } from 'assets';
+import { IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp, Logo } from 'assets';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import type { LayoutProps } from './types';
 import { useState } from 'react';
@@ -61,7 +60,7 @@ function Layout({ children }: LayoutProps) {
         <HeaderContainer>
           <LogoMenuContainer>
             <HashLink smooth to="/#top">
-              <LogoImg src="/src/assets/logo.png"></LogoImg>
+              <LogoImg src={Logo}></LogoImg>
             </HashLink>
             <MenuContainer>
               <StyledHashLink smooth to="/#services">
