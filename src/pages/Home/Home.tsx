@@ -2,12 +2,18 @@ import { useTranslation } from 'react-i18next';
 import {
   AboutMeDescription,
   AboutMeTitle,
+  AddressContainer,
   ButtonBox,
   ButtonBoxSection3,
   ButtonBoxSection3Tablett,
   ButtonContainer,
   ButtonContainerTablett,
   CardContainer,
+  ContactAddressP,
+  ContactBox,
+  ContactP,
+  ContactPSocialMediaBox,
+  ContactTitle,
   ContainerAboutMe,
   ContainerAboutMeText,
   ContainerFoto1,
@@ -15,6 +21,7 @@ import {
   ContainerP,
   ContainerPMobile,
   ContainerPTablett,
+  EmailA,
   Foto1,
   Foto1Mobile,
   Foto2,
@@ -22,6 +29,8 @@ import {
   FotoAboutMeTablett,
   FotoButtonContainerTablett,
   HomeContainer,
+  MapAddressContainer,
+  MapBox,
   Section1,
   Section1Foto,
   Section1FotoMobile,
@@ -31,6 +40,8 @@ import {
   Section2TitleContainer,
   Section3,
   Section3TitleContainer,
+  Section4Certificate,
+  Section5Map,
   StyledH1,
   StyledH1Tablett,
   StyledH2,
@@ -42,15 +53,19 @@ import {
   StyledSpanMobile,
   StyledTitle,
 } from './styles';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
+import Button from 'components/Button/Button';
+import Card from 'components/Card/Card';
+import Carousel from 'components/Carousel/Carousel';
+import IconSVG from 'components/IconSVG/IconSVG';
+import { IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp } from 'assets/index';
+import Map from 'components/Map/Map';
 
 function Home() {
   const { t } = useTranslation();
   return (
     <HomeContainer>
       <StyledH1Tablett>{t('home.section1.h1')}</StyledH1Tablett>
-      <Section1>
+      <Section1 id="top">
         <Section1Info>
           <Section1InfoText>
             <StyledTitle>
@@ -120,7 +135,7 @@ function Home() {
           </ContainerFoto234>
         </Section1Foto>
       </Section1>
-      <Section2>
+      <Section2 id="services">
         <Section2TitleContainer>
           <StyledSection2H2>{t('home.section2.h2')}</StyledSection2H2>
           <StyledSection2P>
@@ -162,7 +177,7 @@ function Home() {
           ></Card>
         </CardContainer>
       </Section2>
-      <Section3>
+      <Section3 id="aboutMe">
         <Section3TitleContainer>
           <StyledSection2H2>{t('home.section3.h2')}</StyledSection2H2>
           <StyledSection2P>
@@ -170,67 +185,119 @@ function Home() {
             <StyledSpan>
               <br></br>
             </StyledSpan>
-            <StyledSpanMobile/>
+            <StyledSpanMobile />
             {t('home.section3.p2')}
           </StyledSection2P>
           <ContainerAboutMe>
             <FotoAboutMe src="/src/assets/FotoAboutMe.webp" />
             <FotoButtonContainerTablett>
-            <FotoAboutMeTablett src="/src/assets/FotoAboutMeTablett.webp" />
-            <ButtonBoxSection3Tablett>
+              <FotoAboutMeTablett src="/src/assets/FotoAboutMeTablett.webp" />
+              <ButtonBoxSection3Tablett>
                 <Button bgColor name={t('home.button1')} />
                 <Button colorText name={t('home.button2')} />
               </ButtonBoxSection3Tablett>
             </FotoButtonContainerTablett>
-            
             <ContainerAboutMeText>
               <AboutMeTitle>{t('home.section3.h2Description')}</AboutMeTitle>
-              
-
-              
-              
               <AboutMeDescription>
                 {t('home.section3.text1')}
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text1_1')}
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text1_2')}
               </AboutMeDescription>
               <AboutMeDescription>
                 {t('home.section3.text2')}
-                <StyledSpanDesktop><br></br></StyledSpanDesktop>
+                <StyledSpanDesktop>
+                  <br></br>
+                </StyledSpanDesktop>
                 {t('home.section3.text2D')}
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text2_1')}
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text2_2')}
-                <StyledSpanDesktop><br></br></StyledSpanDesktop>
+                <StyledSpanDesktop>
+                  <br></br>
+                </StyledSpanDesktop>
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text2_3')}
               </AboutMeDescription>
               <AboutMeDescription>
                 {t('home.section3.text3')}
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text3_1')}
                 <StyledSpan />
-                <StyledSpanMobile/>
+                <StyledSpanMobile />
                 {t('home.section3.text3_2')}
-                </AboutMeDescription>
+              </AboutMeDescription>
               <ButtonBoxSection3>
                 <Button bgColor name={t('home.button1')} />
                 <Button colorText name={t('home.button2')} />
               </ButtonBoxSection3>
-              
             </ContainerAboutMeText>
           </ContainerAboutMe>
         </Section3TitleContainer>
       </Section3>
+      <Section4Certificate>
+        <Section3TitleContainer>
+          <StyledSection2H2>{t('home.section4.h2')}</StyledSection2H2>
+          <StyledSection2P>
+            {t('home.section4.p1')}
+            <StyledSpan>
+              <br></br>
+            </StyledSpan>
+            <StyledSpanMobile />
+            {t('home.section4.p2')}
+          </StyledSection2P>
+        </Section3TitleContainer>
+        <Carousel />
+      </Section4Certificate>
+      <Section5Map id="contacts">
+        <Section3TitleContainer>
+          <StyledSection2H2>{t('home.section5.h2')}</StyledSection2H2>
+          <StyledSection2P>
+            {t('home.section5.p')}
+          </StyledSection2P>
+        </Section3TitleContainer>
+        <MapAddressContainer>
+          <AddressContainer>
+            <ContactBox>
+              <ContactTitle> {t('home.section5.tel')}</ContactTitle>
+              <ContactAddressP>+49 160 3212 983</ContactAddressP>
+            </ContactBox>
+            <ContactBox>
+              <ContactTitle> {t('home.section5.address')}</ContactTitle>
+              <ContactAddressP>Hardenstraße 51, <br></br> 20539 Hamburg</ContactAddressP>
+            </ContactBox>
+            <ContactBox>
+              <ContactTitle> {t('home.section5.open')}</ContactTitle>
+              <ContactP>{t('home.section5.appoint')}</ContactP>
+              </ContactBox>
+            <ContactBox>
+              <ContactTitle> {t('home.section5.email')}</ContactTitle>
+              <EmailA href='mailto:kontakt.bisnes@gmail.com' target='_blank'>kontakt.bisnes@gmail.com</EmailA>
+              </ContactBox>
+            <ContactBox>
+              <ContactTitle> {t('home.section5.socialMedia')}</ContactTitle>
+              <ContactPSocialMediaBox>
+                      <IconSVG  path={IconTelegram} />
+                  <IconSVG path={IconWhatsApp} />
+                  <IconSVG path={IconInstagram} path2={IconInstagram2} />
+                  <IconSVG  path={IconFacebook} />
+              </ContactPSocialMediaBox>
+              </ContactBox>
+          </AddressContainer>
+          <MapBox>
+            <Map/>
+          </MapBox>
+        </MapAddressContainer>
+      </Section5Map>
     </HomeContainer>
   );
 }

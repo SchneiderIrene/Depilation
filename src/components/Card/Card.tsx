@@ -29,15 +29,15 @@ function Card({title, description, srcImg, nameButton1, nameButton2}: CardProps)
             <path
               d="M15 9.61538L9 15M9 15L3 9.61538M9 15L9 0.999999"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M16 18.5L1 18.5"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
           </ArrowSVG>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{nameButton1}

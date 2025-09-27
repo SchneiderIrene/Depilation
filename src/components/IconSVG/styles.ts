@@ -11,6 +11,7 @@ export const IconSVGComponent = styled.svg<IconSVGProps>`
  width: 40px;
   color: #5B4F4B; // исходный цвет
   transition: color 0.3s;
+
   
 
   &:hover {
