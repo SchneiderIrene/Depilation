@@ -249,6 +249,9 @@ export const MenuContainerF = styled.div`
   @media (max-width: 768px) {
     gap: 35px;
   }
+    @media (max-width: 375px) {
+    gap: 25px;
+  }
 `;
 
 export const StyledHashLinkF = styled(HashLink)`

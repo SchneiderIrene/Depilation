@@ -34,7 +34,7 @@ import {
   StyledHashLinkMobileMenu,
 } from './styles';
 import IconSVG from 'components/IconSVG/IconSVG';
-import { IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp, Logo } from 'assets';
+import { CloseButton, IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp, Logo, MobileMenu } from 'assets';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import type { LayoutProps } from './types';
 import { useState } from 'react';
@@ -110,10 +110,10 @@ function Layout({ children }: LayoutProps) {
                   <IconSVG hidde path={IconFacebook} />
                 </a>
                 <LanguageSwitcher />
-                <MobileMenuIcon src="/src/assets/Menu 21.svg" onClick={handleOpenModal} />
+                <MobileMenuIcon src={MobileMenu} onClick={handleOpenModal} />
                 <ModalMenu isOpen={isModalOpen} onClose={handleCloseModal}>
                   <MobileMenuContainer>
-                    <CloseIcon src="/src/assets/close.png" onClick={handleCloseModal} />
+                    <CloseIcon src={CloseButton} onClick={handleCloseModal} />
                     <StyledHashLinkMobileMenu smooth to="/#services">
                       {t('header.services')}
                     </StyledHashLinkMobileMenu>
@@ -169,7 +169,7 @@ function Layout({ children }: LayoutProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <IconSVG hidde path={IconTelegram} />
+                    <IconSVG  path={IconTelegram} />
                   </a>
 
                   <a href="https://wa.me/491603212983" target="_blank" rel="noopener noreferrer">
@@ -183,7 +183,7 @@ function Layout({ children }: LayoutProps) {
                     <IconSVG path={IconInstagram} path2={IconInstagram2} />
                   </a>
                   <a href="" target="_blank" rel="noopener noreferrer">
-                    <IconSVG hidde path={IconFacebook} />
+                    <IconSVG path={IconFacebook} />
                   </a>
                 </IconContainerF>
               </AddressIconContainerF>
@@ -195,7 +195,7 @@ function Layout({ children }: LayoutProps) {
                 d="M9.49993 2.5C6.05379 2.5 3.2666 5.33787 3.2666 8.84667C3.2666 13.6067 9.49993 19.5 9.49993 19.5C9.49993 19.5 15.7333 13.6067 15.7333 8.84667C15.7333 5.33787 12.9461 2.5 9.49993 2.5ZM9.49993 11.1133C8.27108 11.1133 7.27374 10.0979 7.27374 8.84667C7.27374 7.59547 8.27108 6.58 9.49993 6.58C10.7288 6.58 11.7261 7.59547 11.7261 8.84667C11.7261 10.0979 10.7288 11.1133 9.49993 11.1133Z"
                 stroke="currentColor"
                 fill="currentColor"
-                strokeWidth="2"
+                strokeWidth="0"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
