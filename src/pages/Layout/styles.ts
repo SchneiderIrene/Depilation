@@ -242,8 +242,8 @@ export const FooterContainer = styled.div`
     padding-bottom: 0px;
   }
   @media (max-width: 430px) {
-    padding-left: 50px;
-    padding-right: 40px;
+    /* padding-left: 50px;
+    padding-right: 40px; */
     padding-bottom: 10px;
     padding-top: 10px;
     
@@ -269,7 +269,6 @@ export const MenuContainerF = styled.div`
     gap: 35px;
   }
     @media (max-width: 430px) {
-    gap: 20px;
      display: none;
 
   }
@@ -303,7 +302,7 @@ export const LogoMenuContainerF = styled.div`
   }
 
   @media (max-width: 430px) {
-   gap: 10px;
+
   }
 `;
 
