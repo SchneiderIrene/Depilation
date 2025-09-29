@@ -112,6 +112,10 @@ export const LogoImg = styled.img`
   :hover {
     filter: brightness(0.9);
   }
+
+    @media (max-width: 430px) {
+      width: 50px;
+    }
 `;
 
 export const AddressIconContainer = styled.div`
@@ -177,6 +181,7 @@ export const AddressContainer = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   gap: 20px;
+ 
 
   @media (max-width: 430px) {
     gap: 10px;
@@ -188,6 +193,7 @@ export const MobileMenuIcon = styled.img`
 
   @media (max-width: 430px) {
     display: block;
+    
   }
 `;
 
@@ -220,6 +226,8 @@ export const FooterBox = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
+   
 `;
 export const FooterContainer = styled.div`
   display: flex;
@@ -234,12 +242,24 @@ export const FooterContainer = styled.div`
     padding-bottom: 0px;
   }
   @media (max-width: 430px) {
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 10px;
     padding-top: 10px;
+    
   }
 `;
+
+export const MenuContainerFMobile = styled.div`
+display: none;
+
+   @media (max-width: 430px) {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px ;
+
+  }
+`
 
 export const MenuContainerF = styled.div`
   display: flex;
@@ -249,7 +269,9 @@ export const MenuContainerF = styled.div`
     gap: 35px;
   }
     @media (max-width: 430px) {
-    gap: 25px;
+    gap: 20px;
+     display: none;
+
   }
 `;
 
@@ -281,7 +303,7 @@ export const LogoMenuContainerF = styled.div`
   }
 
   @media (max-width: 430px) {
-    flex-direction: column;
+   gap: 10px;
   }
 `;
 
@@ -301,7 +323,7 @@ export const AdressContainerFTablett = styled.div`
     gap: 8px;
   }
   @media (max-width: 430px) {
-    margin-top: 40px;
+    margin-top: 25px;
   }
 `;
 
@@ -311,6 +333,10 @@ export const ContactContainerF = styled.div`
 
   @media (max-width: 768px) {
     gap: 20px;
+      
+  }
+    @media (max-width: 430px) {
+    
   }
 `;
 
@@ -348,6 +374,7 @@ export const StyledFooterP = styled.p`
 
   @media (max-width: 430px) {
     text-align: center;
+    margin-top: -10px;
   }
 `;
 

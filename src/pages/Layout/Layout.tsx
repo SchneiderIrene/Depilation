@@ -25,6 +25,7 @@ import {
   Main,
   MenuContainer,
   MenuContainerF,
+  MenuContainerFMobile,
   MobileMenuContainer,
   MobileMenuIcon,
   StyledFooterLink,
@@ -189,6 +190,17 @@ function Layout({ children }: LayoutProps) {
               </AddressIconContainerF>
             </ContactContainerF>
           </FooterContainer>
+          <MenuContainerFMobile>
+            <StyledHashLinkF smooth to="/#services">
+                  {t('header.services')}
+                </StyledHashLinkF>
+                <StyledHashLinkF smooth to="/#aboutMe">
+                  {t('header.aboutMe')}
+                </StyledHashLinkF>
+                <StyledHashLinkF smooth to="/#contacts">
+                  {t('header.contact')}
+                </StyledHashLinkF>
+          </MenuContainerFMobile>
           <AdressContainerFTablett>
             <IconMapsSVG>
               <path
