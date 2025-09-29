@@ -24,7 +24,7 @@ scroll-margin-top: 100px;
     padding-bottom: 60px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     padding-right: 16px;
   }
@@ -45,8 +45,7 @@ export const Section1Info = styled.div`
     justify-content: left;
     gap: 53px;
   }
-  @media (max-width: 375px) {
-  }
+ 
 `;
 
 export const StyledTitle = styled.div`
@@ -54,7 +53,7 @@ export const StyledTitle = styled.div`
   flex-direction: column;
   gap: 1.4vw;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 25px;
   }
 `;
@@ -66,11 +65,11 @@ export const StyledH1 = styled.h1`
   line-height: 1.4;
   letter-spacing: 0.02em;
 
-  @media (min-width: 376px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 768px) {
     display: none;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     font-size: 22px;
     margin-top: -10px;
   }
@@ -86,7 +85,7 @@ export const StyledH1Tablett = styled.h1`
   padding-left: 32px;
   padding-right: 32px;
 
-  @media (min-width: 376px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 768px) {
     display: block;
   }
 `;
@@ -103,7 +102,7 @@ export const StyledH2 = styled.h2`
     line-height: 0.6;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     font-size: 19px;
   }
 `;
@@ -111,7 +110,7 @@ export const StyledH2 = styled.h2`
 export const StyledSpan = styled.span`
   display: none;
 
-  @media (min-width: 376px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 768px) {
     display: block;
   }
 `;
@@ -124,7 +123,7 @@ export const StyledSpanDesktop = styled.span`
 
 export const StyledSpanMobile = styled.span`
   display: none;
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: block;
   }
 `;
@@ -149,7 +148,7 @@ export const ContainerPTablett = styled.div`
   @media (max-width: 768px) {
     display: block;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: none;
   }
 `;
@@ -157,7 +156,7 @@ export const ContainerPTablett = styled.div`
 export const ContainerPMobile = styled.div`
   display: none;
   margin-top: -28px;
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: block;
   }
 `;
@@ -174,7 +173,7 @@ export const StyledP = styled.p`
     line-height: 1.23;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     font-size: 18px;
   }
 `;
@@ -202,7 +201,7 @@ export const ButtonContainerTablett = styled.div`
     display: flex;
     margin-top: -23px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     width: 335px;
   }
 `;
@@ -216,7 +215,7 @@ export const Section1Foto = styled.div`
     gap: 0px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: none;
   }
 `;
@@ -224,7 +223,7 @@ export const Section1Foto = styled.div`
 export const Section1FotoMobile = styled.div`
   display: none;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: flex;
     flex-direction: column;
     margin-top: -25px;
@@ -244,7 +243,7 @@ export const Foto1 = styled.img`
     width: 300px;
     height: 327px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: none;
   }
 `;
@@ -252,7 +251,7 @@ export const Foto1 = styled.img`
 export const Foto1Mobile = styled.img`
   display: none;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: flex;
     width: 335px;
     height: 345px;
@@ -264,7 +263,7 @@ export const Foto2 = styled.img`
     width: 92px;
     height: 82px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     width: 105px;
     height: 100px;
   }
@@ -280,7 +279,7 @@ export const ContainerFoto234 = styled.div`
     flex-direction: row;
     gap: 12px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 10px;
     margin-top: 10px;
   }
@@ -299,7 +298,7 @@ export const Section2 = styled.section`
     padding-bottom: 60px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     padding-right: 32px;
     padding-top: 60px;
@@ -312,7 +311,7 @@ export const Section2TitleContainer = styled.div`
   align-items: center;
   gap: 40px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 20px;
   }
 `;
@@ -323,7 +322,7 @@ export const StyledSection2H2 = styled.h2`
   line-height: 1.2;
   letter-spacing: 0.02em;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     font-size: 22px;
   }
 `;
@@ -339,7 +338,7 @@ export const StyledSection2P = styled.p`
     line-height: 0.6;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     font-size: 18px;
     line-height: 1.2;
   }
@@ -357,7 +356,7 @@ export const CardContainer = styled.div`
     grid-template-columns: repeat(2, 273px);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,7 +379,7 @@ export const Section3 = styled.section`
     padding-top: 60px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     padding-right: 32px;
     padding-top: 60px;
@@ -397,7 +396,7 @@ export const Section3TitleContainer = styled.div`
     gap: 48px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 20px;
   }
 `;
@@ -412,7 +411,7 @@ export const ContainerAboutMe = styled.div`
     gap: 25px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     align-items: center;
   }
@@ -427,7 +426,7 @@ export const FotoButtonContainerTablett = styled.div`
     gap: 40px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
   }
 `;
 
@@ -438,7 +437,7 @@ export const FotoAboutMe = styled.img`
     display: none;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
   }
 `;
 
@@ -451,7 +450,7 @@ export const FotoAboutMeTablett = styled.img`
     height: 298px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
   }
 `;
 export const ContainerAboutMeText = styled.div`
@@ -465,7 +464,7 @@ export const ContainerAboutMeText = styled.div`
     margin-top: 0;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     width: 335px;
   }
 `;
@@ -495,11 +494,7 @@ export const AboutMeDescription = styled.p`
   white-space: pre-line;
   text-align: start;
 
-  @media (max-width: 768px) {
-  }
 
-  @media (max-width: 375px) {
-  }
 `;
 
 export const ButtonBoxSection3 = styled.div`
@@ -508,11 +503,11 @@ export const ButtonBoxSection3 = styled.div`
   width: 100%;
   margin-top: 6px;
 
-  @media (min-width: 376px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 768px) {
     display: none;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     margin-top: 20px;
   }
@@ -521,13 +516,13 @@ export const ButtonBoxSection3 = styled.div`
 export const ButtonBoxSection3Tablett = styled.div`
   display: none;
 
-  @media (min-width: 376px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
   }
 `;
 
@@ -544,7 +539,7 @@ export const Section4Certificate = styled.section`
     padding-bottom: 60px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     padding-right: 0px;
     padding-left: 20px;
@@ -565,7 +560,7 @@ export const Section5Map = styled.section`
     padding-bottom: 0px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     padding-right: 0px;
     padding-left: 0px;
@@ -579,7 +574,7 @@ gap: 20px;
 margin-top: 50px;
 justify-content: center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
   flex-direction: column;
   align-items: center;
   
@@ -598,10 +593,9 @@ align-items: center;
 
    @media (max-width: 768px) {
    height: 460px;
+   width: 335px;
   }
-       @media (max-width: 768px) {
-    width: 335px;
-  }
+ 
 
 `
     
@@ -612,9 +606,7 @@ flex-direction: column;
 align-items: center;
 gap: 10px;
 
-  @media (max-width: 768px) {
-  
-  }
+ 
 `
 export const ContactTitle = styled.p`
  text-transform: uppercase;
@@ -687,7 +679,7 @@ height: 460px;
    height: 460px;
   width: 389px;
   }
-         @media (max-width: 768px) {
+         @media (max-width: 430px) {
     width: 335px;
   }
 `

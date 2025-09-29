@@ -19,7 +19,7 @@ export const IconSVGComponent = styled.svg<IconSVGProps>`
    
   }
 
-    @media (max-width: 375px) {
+    @media (max-width: 430px) {
     display: ${({ $hidde }) => ($hidde ? 'none' : 'block')};
    
   }

@@ -33,8 +33,7 @@ export const HeaderContainer = styled.div`
     padding-left: 32px;
     padding-right: 32px;
   }
-  @media (max-width: 375px) {
-  }
+  
 `;
 export const LogoMenuContainer = styled.div`
   display: flex;
@@ -45,7 +44,7 @@ export const LogoMenuContainer = styled.div`
     gap: 20px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 0px;
   }
 `;
@@ -88,7 +87,7 @@ export const StyledHashLink = styled(HashLink)`
     color: #7b6f6b;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: none;
   }
 `;
@@ -179,7 +178,7 @@ export const IconContainer = styled.div`
   display: flex;
   gap: 20px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 10px;
   }
 `;
@@ -187,7 +186,7 @@ export const IconContainer = styled.div`
 export const MobileMenuIcon = styled.img`
   display: none;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     display: block;
   }
 `;
@@ -201,7 +200,7 @@ export const Main = styled.main`
   @media (max-width: 768px) {
     padding: 65px 0;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     padding: 20px 0;
   }
 `;
@@ -234,7 +233,7 @@ export const FooterContainer = styled.div`
     padding-right: 32px;
     padding-bottom: 0px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
     justify-content: center;
     gap: 40px;
@@ -249,7 +248,7 @@ export const MenuContainerF = styled.div`
   @media (max-width: 768px) {
     gap: 35px;
   }
-    @media (max-width: 375px) {
+    @media (max-width: 430px) {
     gap: 25px;
   }
 `;
@@ -281,7 +280,7 @@ export const LogoMenuContainerF = styled.div`
     gap: 40px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     flex-direction: column;
   }
 `;
@@ -301,7 +300,7 @@ export const AdressContainerFTablett = styled.div`
     align-items: center;
     gap: 8px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     margin-top: 40px;
   }
 `;
@@ -319,7 +318,7 @@ export const IconContainerF = styled.div`
   display: flex;
   gap: 20px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     gap: 20px;
   }
 `;
@@ -347,7 +346,7 @@ export const StyledFooterP = styled.p`
   line-height: 1.2;
   letter-spacing: 0em;
 
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     text-align: center;
   }
 `;

@@ -61,7 +61,7 @@ export const StyledArrow = styled.div<{ left?: boolean; right?: boolean }>`
   ${({ right }) => right && `right: -75px;`} 
   }
 
-   @media (max-width: 375px) {
+   @media (max-width: 430px) {
   display: none;
   }
 `;

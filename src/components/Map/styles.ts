@@ -15,7 +15,7 @@ z-index: 1;
   width: 389px;
   }
 
-         @media (max-width: 768px) {
+         @media (max-width: 430px) {
     width: 335px;
   }
 ` 
