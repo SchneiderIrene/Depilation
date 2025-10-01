@@ -25,13 +25,17 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 154px; */
   width: 100%;
   padding: 20px clamp(20px, 10.6vw, 200px);
 
   @media (max-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+    @media (max-width: 430px) {
+    padding-left: 22px;
+    padding-right: 22px;
   }
   
 `;
