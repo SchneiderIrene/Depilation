@@ -131,13 +131,13 @@ function Layout({ children }: LayoutProps) {
                 <ModalMenu isOpen={isModalOpen} onClose={handleCloseModal}>
                   <MobileMenuContainer>
                     <CloseIcon src={CloseButton} onClick={handleCloseModal} />
-                    <StyledHashLinkMobileMenu smooth to="/#services">
+                    <StyledHashLinkMobileMenu smooth to="/#services" onClick={handleCloseModal}>
                       {t('header.services')}
                     </StyledHashLinkMobileMenu>
-                    <StyledHashLinkMobileMenu smooth to="/#aboutMe">
+                    <StyledHashLinkMobileMenu smooth to="/#aboutMe" onClick={handleCloseModal}>
                       {t('header.aboutMe')}
                     </StyledHashLinkMobileMenu>
-                    <StyledHashLinkMobileMenu smooth to="/#contacts">
+                    <StyledHashLinkMobileMenu smooth to="/#contacts" onClick={handleCloseModal}>
                       {t('header.contact')}
                     </StyledHashLinkMobileMenu>
                   </MobileMenuContainer>
