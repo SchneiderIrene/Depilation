@@ -12,7 +12,6 @@ min-height: 100vh;
 
 export const Header = styled.header`
   background-color: #f1ece6;
-  /* padding:  0 100px; */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -242,7 +241,9 @@ export const FooterBox = styled.div`
 export const FooterContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+    gap: clamp(20px, 10.6vw, 200px);
+  /* justify-content: space-between; */
   width: 100%;
   padding: 18px clamp(20px, 10.6vw, 200px);
 
