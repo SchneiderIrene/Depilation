@@ -129,8 +129,20 @@ function Home() {
               <StyledP>{t('home.section1Mobile.p5')}</StyledP>
             </ContainerPMobile>
             <ButtonContainerTablett>
-              <Button name={t('home.button1')} bgColor />
-              <Button name={t('home.button2')} colorText />
+              <StyledARoute
+                href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button name={t('home.button1')} bgColor />
+              </StyledARoute>
+              <StyledARoute
+                href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button name={t('home.button2')} colorText />
+              </StyledARoute>
             </ButtonContainerTablett>
           </Section1InfoText>
           <ButtonContainer>

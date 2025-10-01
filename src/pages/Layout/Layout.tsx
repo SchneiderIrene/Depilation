@@ -123,7 +123,7 @@ function Layout({ children }: LayoutProps) {
                 >
                   <IconSVG path={IconInstagram} path2={IconInstagram2} />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/share/1XazjNXpXp/" target="_blank" rel="noopener noreferrer">
                   <IconSVG hidde path={IconFacebook} />
                 </a>
                 <LanguageSwitcher />
@@ -205,7 +205,7 @@ function Layout({ children }: LayoutProps) {
                   >
                     <IconSVG path={IconInstagram} path2={IconInstagram2} />
                   </a>
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/share/1XazjNXpXp/" target="_blank" rel="noopener noreferrer">
                     <IconSVG path={IconFacebook} />
                   </a>
                 </IconContainerF>
