@@ -223,7 +223,12 @@ function Layout({ children }: LayoutProps) {
               {t('header.contact')}
             </StyledHashLinkF>
           </MenuContainerFMobile>
-          <AdressContainerFTablett>
+            <StyledARoute
+                href="https://www.google.com/maps/dir/?api=1&destination=53.5363949,10.0321941"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AdressContainerFTablett>
             <IconMapsSVG>
               <path
                 d="M9.49993 2.5C6.05379 2.5 3.2666 5.33787 3.2666 8.84667C3.2666 13.6067 9.49993 19.5 9.49993 19.5C9.49993 19.5 15.7333 13.6067 15.7333 8.84667C15.7333 5.33787 12.9461 2.5 9.49993 2.5ZM9.49993 11.1133C8.27108 11.1133 7.27374 10.0979 7.27374 8.84667C7.27374 7.59547 8.27108 6.58 9.49993 6.58C10.7288 6.58 11.7261 7.59547 11.7261 8.84667C11.7261 10.0979 10.7288 11.1133 9.49993 11.1133Z"
@@ -236,6 +241,7 @@ function Layout({ children }: LayoutProps) {
             </IconMapsSVG>
             <AddressP>Hardenstraße 51, 20539 Hamburg</AddressP>
           </AdressContainerFTablett>
+              </StyledARoute>
           <DatenschutzContainer>
             <StyledFooterP>
               © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены

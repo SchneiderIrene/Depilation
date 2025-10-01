@@ -54,7 +54,7 @@ export const MenuContainer = styled.div`
   gap: 28px;
 
   @media (max-width: 768px) {
-    gap: 25px;
+    gap: 18px;
   }
 `;
 export const MobileMenuContainer = styled.div`
