@@ -538,10 +538,13 @@ export const Section4Certificate = styled.section`
   padding: 80px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   width: 100%;
   background-color: #f1ece6;
+ 
+  
   @media (max-width: 768px) {
     padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 60px;
+    padding-right: 0px;
+    padding-bottom: 60px; 
+     
   }
 
   @media (max-width: 430px) {

@@ -13,7 +13,7 @@ import type { Splide as SplideType } from '@splidejs/splide'; // тип для �
 function Carousel() {
   const splideRef = useRef<SplideType | null>(null);
 
-    const goPrev = () => splideRef.current?.go('<');
+  const goPrev = () => splideRef.current?.go('<');
   const goNext = () => splideRef.current?.go('>');
 
   return (
@@ -28,11 +28,14 @@ function Carousel() {
           arrows: false,
           autoWidth: true,
           drag: true,
-           breakpoints: {
-      768: {
-        gap: '5px',   // на планшетах меньше отступ
-      },
-    },
+          breakpoints: {
+            768: {
+              gap: '30px',
+            },
+            430: {
+              gap: '16px',
+            },
+          },
         }}
         aria-label="Certificates"
         ref={splideRef}
@@ -43,7 +46,7 @@ function Carousel() {
           </StyledSplideSlide>
         ))}
       </StyledSplide>
-      <StyledArrow  onClick={goPrev} left >
+      <StyledArrow onClick={goPrev} left>
         <ArrowNavSVG>
           <path
             d="M27.137 28.698C27.0277 28.5886 27.0277 28.4113 27.137 28.302L31.182 24.257C31.5725 23.8665 31.5725 23.2335 31.182 22.843C30.7916 22.4525 30.1585 22.4525 29.768 22.843L24.6006 28.0104C24.3302 28.2808 24.3302 28.7192 24.6006 28.9895L29.768 34.157C30.1585 34.5475 30.7916 34.5475 31.182 34.157C31.5725 33.7665 31.5725 33.1335 31.182 32.743L27.137 28.698Z"

@@ -9,7 +9,7 @@ export const CarouselContainer = styled.div`
   position: relative;
 
   @media (max-width: 768px) {
-    max-width: 560px;
+    max-width: 100%;
   }
 `;
 
@@ -57,11 +57,10 @@ export const StyledArrow = styled.div<{ left?: boolean; right?: boolean }>`
   padding: 0;
 
    @media (max-width: 768px) {
-   ${({ left }) => left && `left: -75px;`}
-  ${({ right }) => right && `right: -75px;`} 
+   display: none;
   }
 
-   @media (max-width: 430px) {
-  display: none;
+   @media (max-width: 768px) {
+  
   }
 `;
