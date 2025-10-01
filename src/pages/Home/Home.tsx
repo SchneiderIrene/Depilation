@@ -87,7 +87,9 @@ function Home() {
         <Section1Info>
           <Section1InfoText>
             <StyledTitle>
-              <StyledH1>{t('home.section1.h1')}</StyledH1>
+              <StyledH1>{t('home.section1.h1')}<StyledSpan>
+                  <br></br>
+                </StyledSpan> {t('home.section1.h1.1')}</StyledH1>
               <StyledH2>
                 {t('home.section1.h2.1')}
                 <StyledSpan>
