@@ -20,7 +20,7 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
   color: ${({ colorText }) => (colorText ? '#7B6F6B' : '#F5F5F5')};
   font-family: LatoRegular, sans-serif;
   text-decoration: none;
-  font-size: 20px;
+  font-size: clamp(18px, 2vw, 20px);
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;

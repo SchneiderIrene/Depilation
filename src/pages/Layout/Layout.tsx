@@ -64,8 +64,6 @@ function Layout({ children }: LayoutProps) {
 
   const handleCloseModal = () => setIsModalOpen(false);
 
-  const position: [number, number] = [53.5363949, 10.0321941];
-  const googleMapsLink = `https://www.google.com/maps/dir/?api=1&destination=${position[0]},${position[1]}`;
 
   return (
     <LayoutComponent>
