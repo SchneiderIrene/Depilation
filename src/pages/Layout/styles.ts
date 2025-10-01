@@ -124,6 +124,10 @@ export const AddressIconContainer = styled.div`
   gap: 36px;
 `;
 
+export const StyledARoute = styled.a`
+text-decoration: none;
+color: inherit;
+`
 export const IconMapsSVG = styled.svg`
   color: inherit;
   margin: 0;

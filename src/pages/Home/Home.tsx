@@ -42,6 +42,7 @@ import {
   Section3TitleContainer,
   Section4Certificate,
   Section5Map,
+  StyledARoute,
   StyledH1,
   StyledH1Tablett,
   StyledH2,
@@ -57,7 +58,24 @@ import Button from 'components/Button/Button';
 import Card from 'components/Card/Card';
 import Carousel from 'components/Carousel/Carousel';
 import IconSVG from 'components/IconSVG/IconSVG';
-import { Foto, FotoAM, FotoAMTablett, FotoImg1, FotoImg2, FotoImg3, FotoM, IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp, ServiceImg1, ServiceImg2, ServiceImg3, ServiceImg4 } from 'assets/index';
+import {
+  Foto,
+  FotoAM,
+  FotoAMTablett,
+  FotoImg1,
+  FotoImg2,
+  FotoImg3,
+  FotoM,
+  IconFacebook,
+  IconInstagram,
+  IconInstagram2,
+  IconTelegram,
+  IconWhatsApp,
+  ServiceImg1,
+  ServiceImg2,
+  ServiceImg3,
+  ServiceImg4,
+} from 'assets/index';
 import Map from 'components/Map/Map';
 
 function Home() {
@@ -117,10 +135,22 @@ function Home() {
           </Section1InfoText>
           <ButtonContainer>
             <ButtonBox>
-              <Button name={t('home.button1')} bgColor />
+              <StyledARoute
+                href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button name={t('home.button1')} bgColor />
+              </StyledARoute>
             </ButtonBox>
             <ButtonBox>
-              <Button name={t('home.button2')} colorText />
+              <StyledARoute
+                href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button name={t('home.button2')} colorText />
+              </StyledARoute>
             </ButtonBox>
           </ButtonContainer>
         </Section1Info>
@@ -130,8 +160,8 @@ function Home() {
           </ContainerFoto1>
           <ContainerFoto234>
             <Foto2 src={FotoImg1} />
-                <Foto2 src={FotoImg2} />
-                <Foto2 src={FotoImg3} />
+            <Foto2 src={FotoImg2} />
+            <Foto2 src={FotoImg3} />
           </ContainerFoto234>
         </Section1Foto>
       </Section1>
@@ -261,40 +291,48 @@ function Home() {
       <Section5Map id="contacts">
         <Section3TitleContainer>
           <StyledSection2H2>{t('home.section5.h2')}</StyledSection2H2>
-          <StyledSection2P>
-            {t('home.section5.p')}
-          </StyledSection2P>
+          <StyledSection2P>{t('home.section5.p')}</StyledSection2P>
         </Section3TitleContainer>
         <MapAddressContainer>
           <AddressContainer>
             <ContactBox>
               <ContactTitle> {t('home.section5.tel')}</ContactTitle>
-              <ContactAddressP>+49 160 3212 983</ContactAddressP>
+              <StyledARoute
+                href="tel:+491603212983"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                 <ContactAddressP>+49 160 3212 983</ContactAddressP>
+              </StyledARoute>
             </ContactBox>
             <ContactBox>
               <ContactTitle> {t('home.section5.address')}</ContactTitle>
-              <ContactAddressP>Hardenstraße 51, <br></br> 20539 Hamburg</ContactAddressP>
+              <ContactAddressP>
+                Hardenstraße 51, <br></br> 20539 Hamburg
+              </ContactAddressP>
             </ContactBox>
             <ContactBox>
               <ContactTitle> {t('home.section5.open')}</ContactTitle>
               <ContactP>{t('home.section5.appoint')}</ContactP>
-              </ContactBox>
+            </ContactBox>
             <ContactBox>
               <ContactTitle> {t('home.section5.email')}</ContactTitle>
-              <EmailA href='mailto:kontakt.bisnes@gmail.com' target='_blank'>kontakt.bisnes@gmail.com</EmailA>
-              </ContactBox>
+              <EmailA href="mailto:kontakt.bisnes@gmail.com" target="_blank">
+                kontakt.bisnes@gmail.com
+              </EmailA>
+            </ContactBox>
             <ContactBox>
               <ContactTitle> {t('home.section5.socialMedia')}</ContactTitle>
               <ContactPSocialMediaBox>
-                      <IconSVG  path={IconTelegram} />
-                  <IconSVG path={IconWhatsApp} />
-                  <IconSVG path={IconInstagram} path2={IconInstagram2} />
-                  <IconSVG  path={IconFacebook} />
+                <IconSVG path={IconTelegram} />
+                <IconSVG path={IconWhatsApp} />
+                <IconSVG path={IconInstagram} path2={IconInstagram2} />
+                <IconSVG path={IconFacebook} />
               </ContactPSocialMediaBox>
-              </ContactBox>
+            </ContactBox>
           </AddressContainer>
           <MapBox>
-            <Map/>
+            <Map />
           </MapBox>
         </MapAddressContainer>
       </Section5Map>

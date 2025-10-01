@@ -35,5 +35,14 @@ export const ButtonComponent = styled.button<ButtonComponentStylesProps>`
     color: ${({ colorText }) => (colorText ? '#AE9C96' : '#F5F5F5')};
   }
 
+    @media (max-width: 768px) {
+  
+  :hover{
+    background-color: ${({ bgColor }) => (bgColor ? '#7B6F6B' : 'transparent')};
+    border: 0.07vw solid #7b6f6b;
+    color: ${({ colorText }) => (colorText ? '#7B6F6B' : '#F5F5F5')};
+  }
+  }
+
  
 `;

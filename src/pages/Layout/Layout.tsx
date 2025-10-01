@@ -28,6 +28,7 @@ import {
   MenuContainerFMobile,
   MobileMenuContainer,
   MobileMenuIcon,
+  StyledARoute,
   StyledFooterLink,
   StyledFooterP,
   StyledHashLink,
@@ -35,7 +36,16 @@ import {
   StyledHashLinkMobileMenu,
 } from './styles';
 import IconSVG from 'components/IconSVG/IconSVG';
-import { CloseButton, IconFacebook, IconInstagram, IconInstagram2, IconTelegram, IconWhatsApp, Logo, MobileMenu } from 'assets';
+import {
+  CloseButton,
+  IconFacebook,
+  IconInstagram,
+  IconInstagram2,
+  IconTelegram,
+  IconWhatsApp,
+  Logo,
+  MobileMenu,
+} from 'assets';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import type { LayoutProps } from './types';
 import { useState } from 'react';
@@ -44,7 +54,6 @@ import { StyledSpanMobile } from 'pages/Home/styles';
 import { HashLink } from 'react-router-hash-link';
 
 function Layout({ children }: LayoutProps) {
-
   const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,6 +63,9 @@ function Layout({ children }: LayoutProps) {
   };
 
   const handleCloseModal = () => setIsModalOpen(false);
+
+  const position: [number, number] = [53.5363949, 10.0321941];
+  const googleMapsLink = `https://www.google.com/maps/dir/?api=1&destination=${position[0]},${position[1]}`;
 
   return (
     <LayoutComponent>
@@ -77,17 +89,23 @@ function Layout({ children }: LayoutProps) {
           </LogoMenuContainer>
           <ContactContainer>
             <AddressIconContainer>
-              <AddressContainer>
-                <IconMapsSVG>
-                  <path
-                    d="M9.49993 2.5C6.05379 2.5 3.2666 5.33787 3.2666 8.84667C3.2666 13.6067 9.49993 19.5 9.49993 19.5C9.49993 19.5 15.7333 13.6067 15.7333 8.84667C15.7333 5.33787 12.9461 2.5 9.49993 2.5ZM9.49993 11.1133C8.27108 11.1133 7.27374 10.0979 7.27374 8.84667C7.27374 7.59547 8.27108 6.58 9.49993 6.58C10.7288 6.58 11.7261 7.59547 11.7261 8.84667C11.7261 10.0979 10.7288 11.1133 9.49993 11.1133Z"
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                  />
-                </IconMapsSVG>
-                <AddressP>Hardenstraße 51, 20539 Hamburg</AddressP>
-              </AddressContainer>
+              <StyledARoute
+                href="https://www.google.com/maps/dir/?api=1&destination=53.5363949,10.0321941"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AddressContainer>
+                  <IconMapsSVG>
+                    <path
+                      d="M9.49993 2.5C6.05379 2.5 3.2666 5.33787 3.2666 8.84667C3.2666 13.6067 9.49993 19.5 9.49993 19.5C9.49993 19.5 15.7333 13.6067 15.7333 8.84667C15.7333 5.33787 12.9461 2.5 9.49993 2.5ZM9.49993 11.1133C8.27108 11.1133 7.27374 10.0979 7.27374 8.84667C7.27374 7.59547 8.27108 6.58 9.49993 6.58C10.7288 6.58 11.7261 7.59547 11.7261 8.84667C11.7261 10.0979 10.7288 11.1133 9.49993 11.1133Z"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                    />
+                  </IconMapsSVG>
+                  <AddressP>Hardenstraße 51, 20539 Hamburg</AddressP>
+                </AddressContainer>
+              </StyledARoute>
               <IconContainer>
                 <a
                   href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
@@ -137,8 +155,8 @@ function Layout({ children }: LayoutProps) {
           <FooterContainer>
             <LogoMenuContainerF>
               <HashLink smooth to="/#top">
-              <LogoImg src={Logo}></LogoImg>
-            </HashLink>
+                <LogoImg src={Logo}></LogoImg>
+              </HashLink>
               <MenuContainerF>
                 <StyledHashLinkF smooth to="/#services">
                   {t('header.services')}
@@ -153,24 +171,30 @@ function Layout({ children }: LayoutProps) {
             </LogoMenuContainerF>
             <ContactContainerF>
               <AddressIconContainerF>
-                <AddressContainer>
-                  <IconMapsSVG>
-                    <path
-                      d="M9.49993 2.5C6.05379 2.5 3.2666 5.33787 3.2666 8.84667C3.2666 13.6067 9.49993 19.5 9.49993 19.5C9.49993 19.5 15.7333 13.6067 15.7333 8.84667C15.7333 5.33787 12.9461 2.5 9.49993 2.5ZM9.49993 11.1133C8.27108 11.1133 7.27374 10.0979 7.27374 8.84667C7.27374 7.59547 8.27108 6.58 9.49993 6.58C10.7288 6.58 11.7261 7.59547 11.7261 8.84667C11.7261 10.0979 10.7288 11.1133 9.49993 11.1133Z"
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                    />
-                  </IconMapsSVG>
-                  <AddressP>Hardenstraße 51, 20539 Hamburg</AddressP>
-                </AddressContainer>
+                <StyledARoute
+                  href="https://www.google.com/maps/dir/?api=1&destination=53.5363949,10.0321941"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AddressContainer>
+                    <IconMapsSVG>
+                      <path
+                        d="M9.49993 2.5C6.05379 2.5 3.2666 5.33787 3.2666 8.84667C3.2666 13.6067 9.49993 19.5 9.49993 19.5C9.49993 19.5 15.7333 13.6067 15.7333 8.84667C15.7333 5.33787 12.9461 2.5 9.49993 2.5ZM9.49993 11.1133C8.27108 11.1133 7.27374 10.0979 7.27374 8.84667C7.27374 7.59547 8.27108 6.58 9.49993 6.58C10.7288 6.58 11.7261 7.59547 11.7261 8.84667C11.7261 10.0979 10.7288 11.1133 9.49993 11.1133Z"
+                        stroke="currentColor"
+                        fill="currentColor"
+                        strokeWidth="0"
+                      />
+                    </IconMapsSVG>
+                    <AddressP>Hardenstraße 51, 20539 Hamburg</AddressP>
+                  </AddressContainer>
+                </StyledARoute>
                 <IconContainerF>
                   <a
                     href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <IconSVG  path={IconTelegram} />
+                    <IconSVG path={IconTelegram} />
                   </a>
 
                   <a href="https://wa.me/491603212983" target="_blank" rel="noopener noreferrer">
@@ -192,14 +216,14 @@ function Layout({ children }: LayoutProps) {
           </FooterContainer>
           <MenuContainerFMobile>
             <StyledHashLinkF smooth to="/#services">
-                  {t('header.services')}
-                </StyledHashLinkF>
-                <StyledHashLinkF smooth to="/#aboutMe">
-                  {t('header.aboutMe')}
-                </StyledHashLinkF>
-                <StyledHashLinkF smooth to="/#contacts">
-                  {t('header.contact')}
-                </StyledHashLinkF>
+              {t('header.services')}
+            </StyledHashLinkF>
+            <StyledHashLinkF smooth to="/#aboutMe">
+              {t('header.aboutMe')}
+            </StyledHashLinkF>
+            <StyledHashLinkF smooth to="/#contacts">
+              {t('header.contact')}
+            </StyledHashLinkF>
           </MenuContainerFMobile>
           <AdressContainerFTablett>
             <IconMapsSVG>
@@ -216,17 +240,15 @@ function Layout({ children }: LayoutProps) {
           </AdressContainerFTablett>
           <DatenschutzContainer>
             <StyledFooterP>
-              © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права
-              защищены
+              © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены
             </StyledFooterP>
             <DatenSchutzImpressumBox>
-              <StyledFooterLink to=''>Impressum</StyledFooterLink>
-              <StyledFooterLink to='/datenschutz'>Datenschutz</StyledFooterLink>
+              <StyledFooterLink to="">Impressum</StyledFooterLink>
+              <StyledFooterLink to="/datenschutz">Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>
       </Footer>
-      
     </LayoutComponent>
   );
 }

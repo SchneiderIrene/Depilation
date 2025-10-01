@@ -191,6 +191,11 @@ export const ButtonBox = styled.div`
   width: 273px;
 `;
 
+export const StyledARoute = styled.a`
+text-decoration: none;
+color: inherit;
+`
+
 export const ButtonContainerTablett = styled.div`
   display: none;
   width: 100%;
