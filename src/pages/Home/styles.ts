@@ -8,15 +8,19 @@ export const HomeContainer = styled.div`
   min-height: 100vh;
   width: 100%;
   align-items: center;
+
 `;
 
 export const Section1 = styled.section`
-scroll-margin-top: 100px;
+
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
+  justify-content: center;
   gap: 2.2vw;
+  
   padding: 0 clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
-  width: 100%;
+  /* width: 100%; */
 
   @media (max-width: 768px) {
     padding-left: 32px;
@@ -30,10 +34,12 @@ scroll-margin-top: 100px;
   }
 `;
 
+
+
 export const Section1Info = styled.div`
   display: flex;
   flex-direction: column;
-  width: 42.36vw;
+  /* width: 42.36vw; */
   padding-top: 4.5vw;
   gap: 2vw;
   justify-content: center;
@@ -116,6 +122,7 @@ export const StyledSpan = styled.span`
 `;
 
 export const StyledSpanDesktop = styled.span`
+display: block;
   @media (max-width: 768px) {
     display: none;
   }

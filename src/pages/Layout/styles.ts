@@ -5,14 +5,14 @@ import { HashLink } from 'react-router-hash-link';
 export const LayoutComponent = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+
   width: 100%;
 min-height: 100vh;
 `;
 
 export const Header = styled.header`
   background-color: #f1ece6;
-  width: 100%;
+  /* padding:  0 100px; */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -24,7 +24,9 @@ export const Header = styled.header`
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: clamp(20px, 10.6vw, 200px);
+  /* justify-content: space-between; */
   width: 100%;
   padding: 20px clamp(20px, 10.6vw, 200px);
 

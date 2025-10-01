@@ -84,12 +84,16 @@ function Home() {
     <HomeContainer>
       <StyledH1Tablett>{t('home.section1.h1')}</StyledH1Tablett>
       <Section1 id="top">
-        <Section1Info>
+<Section1Info>
           <Section1InfoText>
             <StyledTitle>
-              <StyledH1>{t('home.section1.h1')}<StyledSpan>
+              <StyledH1>
+                {t('home.section1.h1')}
+                <StyledSpan>
                   <br></br>
-                </StyledSpan> {t('home.section1.h1.1')}</StyledH1>
+                </StyledSpan>
+                <StyledSpanDesktop/>{t('home.section1.h1.1')}
+              </StyledH1>
               <StyledH2>
                 {t('home.section1.h2.1')}
                 <StyledSpan>
@@ -178,6 +182,9 @@ function Home() {
             <Foto2 src={FotoImg3} />
           </ContainerFoto234>
         </Section1Foto>
+
+        
+
       </Section1>
       <Section2 id="services">
         <Section2TitleContainer>
@@ -311,12 +318,8 @@ function Home() {
           <AddressContainer>
             <ContactBox>
               <ContactTitle> {t('home.section5.tel')}</ContactTitle>
-              <StyledARoute
-                href="tel:+491603212983"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                 <ContactAddressP>+49 160 3212 983</ContactAddressP>
+              <StyledARoute href="tel:+491603212983" target="_blank" rel="noopener noreferrer">
+                <ContactAddressP>+49 160 3212 983</ContactAddressP>
               </StyledARoute>
             </ContactBox>
             <ContactBox>
