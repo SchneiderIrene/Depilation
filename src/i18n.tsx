@@ -10,10 +10,13 @@ i18n
   .init({
     fallbackLng: 'ru', // Язык по умолчанию
     debug: true, // Включение отладки
+    supportedLngs: ['ru', 'de'],
+    load: 'languageOnly', // de-DE → de
+
     detection: {
       order: ['querystring', 'cookie', 'localStorage'],
       caches: ['cookie', 'localStorage'], // Сохранение языка в куки
-      cookieOptions: { path: '/', sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 } // 7 дней
+      cookieOptions: { path: '/', sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 }, // 7 дней
     },
     interpolation: {
       escapeValue: false, // Не экранировать значения
@@ -24,4 +27,3 @@ i18n
   });
 
 export default i18n;
-
