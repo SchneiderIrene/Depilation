@@ -64,16 +64,6 @@ function Layout({ children }: LayoutProps) {
 
   const handleCloseModal = () => setIsModalOpen(false);
 
-  // Обработчик клика по ссылке
-const handleMobileLinkClick = (hash: string) => {
-  handleCloseModal(); // сначала закрываем модалку
-  setTimeout(() => {   // даём DOM время перерендериться
-    const el = document.getElementById(hash);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, 50); // 50ms обычно хватает, можно увеличить при необходимости
-};
 
 
 
