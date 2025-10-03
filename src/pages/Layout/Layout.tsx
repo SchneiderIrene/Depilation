@@ -136,10 +136,10 @@ function Layout({ children }: LayoutProps) {
                     <StyledHashLinkMobileMenu  to="/#services" onClick={handleCloseModal}>
                       {t('header.services')}
                     </StyledHashLinkMobileMenu>
-                    <StyledHashLinkMobileMenu smooth to="/#aboutMe" onClick={handleCloseModal}>
+                    <StyledHashLinkMobileMenu  to="/#aboutMe" onClick={handleCloseModal}>
                       {t('header.aboutMe')}
                     </StyledHashLinkMobileMenu>
-                    <StyledHashLinkMobileMenu smooth to="/#contacts" onClick={handleCloseModal}>
+                    <StyledHashLinkMobileMenu  to="/#contacts" onClick={handleCloseModal}>
                       {t('header.contact')}
                     </StyledHashLinkMobileMenu>
                   </MobileMenuContainer>
