@@ -10,8 +10,8 @@ i18n
   .init({
     fallbackLng: 'ru', // Язык по умолчанию
     debug: true, // Включение отладки
-    supportedLngs: ['ru', 'de'],
-    load: 'languageOnly', // de-DE → de
+    supportedLngs: ['ru', 'de'], // добавить языки, которые еще понадобятся
+    load: 'languageOnly', //убираем региональные коды для браузера edg, иначе он подтягивает автоматиш немецкий de-DE → de
 
     detection: {
       order: ['querystring', 'cookie', 'localStorage'],

@@ -64,6 +64,18 @@ function Layout({ children }: LayoutProps) {
 
   const handleCloseModal = () => setIsModalOpen(false);
 
+  // Обработчик клика по ссылке
+const handleMobileLinkClick = (hash: string) => {
+  handleCloseModal(); // сначала закрываем модалку
+  setTimeout(() => {   // даём DOM время перерендериться
+    const el = document.getElementById(hash);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 50); // 50ms обычно хватает, можно увеличить при необходимости
+};
+
+
 
   return (
     <LayoutComponent>
@@ -131,13 +143,13 @@ function Layout({ children }: LayoutProps) {
                 <ModalMenu isOpen={isModalOpen} onClose={handleCloseModal}>
                   <MobileMenuContainer>
                     <CloseIcon src={CloseButton} onClick={handleCloseModal} />
-                    <StyledHashLinkMobileMenu smooth to="/#services" onClick={handleCloseModal}>
+                    <StyledHashLinkMobileMenu smooth to="/#services" onClick={handleMobileLinkClick}>
                       {t('header.services')}
                     </StyledHashLinkMobileMenu>
-                    <StyledHashLinkMobileMenu smooth to="/#aboutMe" onClick={handleCloseModal}>
+                    <StyledHashLinkMobileMenu smooth to="/#aboutMe" onClick={handleMobileLinkClick}>
                       {t('header.aboutMe')}
                     </StyledHashLinkMobileMenu>
-                    <StyledHashLinkMobileMenu smooth to="/#contacts" onClick={handleCloseModal}>
+                    <StyledHashLinkMobileMenu smooth to="/#contacts" onClick={handleMobileLinkClick}>
                       {t('header.contact')}
                     </StyledHashLinkMobileMenu>
                   </MobileMenuContainer>
