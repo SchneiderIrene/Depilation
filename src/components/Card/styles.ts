@@ -66,3 +66,8 @@ position: absolute;
 top: 20px;
 left: 15px;
 `
+
+export const StyledARoute = styled.a`
+text-decoration: none;
+color: inherit;
+`

@@ -1,9 +1,9 @@
 import Button from '../Button/Button';
 import {
-
   ButtonBox,
   CardComponent,
   CardFoto,
+  StyledARoute,
   StyledImg,
   StyledPDescription,
   StyledPTitle,
@@ -11,39 +11,37 @@ import {
 } from './styles';
 import type { CardProps } from './types';
 
-function Card({title, description, srcImg, nameButton1, nameButton2}: CardProps) {
+function Card({
+  title,
+  description,
+  srcImg,
+  nameButton1,
+  nameButton2,
+  button1Href,
+  button1Target = "_blank",
+}: CardProps) {
   return (
     <CardComponent>
       <CardFoto>
         <StyledImg src={srcImg} />
         <TextBox>
           <StyledPTitle>{title}</StyledPTitle>
-          <StyledPDescription>
-            {description}
-          </StyledPDescription>
+          <StyledPDescription>{description}</StyledPDescription>
         </TextBox>
       </CardFoto>
       <ButtonBox>
-        <Button colorText>
-          {/* <ArrowSVG>
-            <path
-              d="M15 9.61538L9 15M9 15L3 9.61538M9 15L9 0.999999"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M16 18.5L1 18.5"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-          </ArrowSVG> */}
-          {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-          {nameButton1}
-        </Button>
-        <Button bgColor>{nameButton2}</Button>
+        <StyledARoute href={button1Href} target={button1Target}>
+<Button colorText>{nameButton1}</Button>
+
+        </StyledARoute>
+        
+        <StyledARoute
+          href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button bgColor>{nameButton2}</Button>
+        </StyledARoute>
       </ButtonBox>
     </CardComponent>
   );

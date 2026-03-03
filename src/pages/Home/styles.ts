@@ -197,6 +197,10 @@ export const ButtonContainer = styled.div`
 export const ButtonBox = styled.div`
   width: 273px;
 `;
+export const ButtonBoxModal = styled.div`
+  width: 100%;
+`;
+
 
 export const StyledARoute = styled.a`
 text-decoration: none;
@@ -704,3 +708,4 @@ display: flex;
 gap: 10px;
 align-items: center;
 `
+

@@ -56,6 +56,7 @@ import {
 } from './styles';
 import Button from 'components/Button/Button';
 import Card from 'components/Card/Card';
+import Map from 'components/Map/Map';
 import Carousel from 'components/Carousel/Carousel';
 import IconSVG from 'components/IconSVG/IconSVG';
 import {
@@ -76,15 +77,15 @@ import {
   ServiceImg3,
   ServiceImg4,
 } from 'assets/index';
-import Map from 'components/Map/Map';
 
 function Home() {
   const { t } = useTranslation();
+
   return (
     <HomeContainer>
       <StyledH1Tablett>{t('home.section1.h1')}</StyledH1Tablett>
       <Section1 id="top">
-<Section1Info>
+        <Section1Info>
           <Section1InfoText>
             <StyledTitle>
               <StyledH1>
@@ -92,7 +93,8 @@ function Home() {
                 <StyledSpan>
                   <br></br>
                 </StyledSpan>
-                <StyledSpanDesktop/>{t('home.section1.h1.1')}
+                <StyledSpanDesktop />
+                {t('home.section1.h1.1')}
               </StyledH1>
               <StyledH2>
                 {t('home.section1.h2.1')}
@@ -201,6 +203,7 @@ function Home() {
             srcImg={ServiceImg1}
             nameButton1={t('card.button1')}
             nameButton2={t('card.button2')}
+            button1Href="/public/Депиляция.pdf"
           ></Card>
           <Card
             title={t('card.card2.title')}
@@ -208,6 +211,7 @@ function Home() {
             srcImg={ServiceImg2}
             nameButton1={t('card.button1')}
             nameButton2={t('card.button2')}
+            button1Href="/public/Косметология.pdf"
           ></Card>
           <Card
             title={t('card.card3.title')}
@@ -215,6 +219,7 @@ function Home() {
             srcImg={ServiceImg3}
             nameButton1={t('card.button1')}
             nameButton2={t('card.button3')}
+            button1Href="/public/Базовый домашний уход.pdf"
           ></Card>
           <Card
             title={t('card.card4.title')}
@@ -222,6 +227,7 @@ function Home() {
             srcImg={ServiceImg4}
             nameButton1={t('card.button4')}
             nameButton2={t('card.button5')}
+            button1Href="/public/Презентация_курса_по_депиляции_pdf_20251003_220443_0000.pdf"
           ></Card>
         </CardContainer>
       </Section2>
@@ -321,9 +327,15 @@ function Home() {
             </ContactBox>
             <ContactBox>
               <ContactTitle> {t('home.section5.address')}</ContactTitle>
-              <ContactAddressP>
-                Hardenstraße 51, <br></br> 20539 Hamburg
-              </ContactAddressP>
+              <StyledARoute
+                href="https://www.google.com/maps/dir/?api=1&destination=53.5363949,10.0321941"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ContactAddressP>
+                  Hardenstraße 51, <br></br> 20539 Hamburg
+                </ContactAddressP>
+              </StyledARoute>
             </ContactBox>
             <ContactBox>
               <ContactTitle> {t('home.section5.open')}</ContactTitle>
@@ -338,15 +350,35 @@ function Home() {
             <ContactBox>
               <ContactTitle> {t('home.section5.socialMedia')}</ContactTitle>
               <ContactPSocialMediaBox>
-                <IconSVG path={IconTelegram} />
-                <IconSVG path={IconWhatsApp} />
-                <IconSVG path={IconInstagram} path2={IconInstagram2} />
-                <IconSVG path={IconFacebook} />
+                <a
+                  href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconSVG path={IconTelegram} />
+                </a>
+                <a href="https://wa.me/491603212983" target="_blank" rel="noopener noreferrer">
+                  <IconSVG path={IconWhatsApp} />
+                </a>
+                <a
+                  href="https://www.instagram.com/s.a.s_shugaring_depilation?igsh=aHZubGc0dzV2M3dt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconSVG path={IconInstagram} path2={IconInstagram2} />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/1XazjNXpXp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconSVG path={IconFacebook} />
+                </a>
               </ContactPSocialMediaBox>
             </ContactBox>
           </AddressContainer>
           <MapBox>
-            <Map />
+            <Map/>
           </MapBox>
         </MapAddressContainer>
       </Section5Map>

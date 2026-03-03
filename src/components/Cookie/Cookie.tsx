@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "components/Button/Button"; // предполагаю, что у тебя есть такой компонент
-import { CookieBox, TextP, ButtonBox, SettingsLink, StyledLink } from "./styles"; // твои стили
+import Button from "components/Button/Button"; 
+import { CookieBox, TextP, ButtonBox, SettingsLink, StyledLink, CookieOverlay } from "./styles";
 import Modal from "components/Modal/Modal";
 import { ModalContentBox, StyledInput, StyledLabel, TextBox, TextModel } from "components/Modal/styles";
 
@@ -128,7 +128,8 @@ const onMouseMove = (e: React.MouseEvent) => {
 const onMouseUp = () => setDragging(false);
 
   return (
-    <CookieBox onMouseDown={onMouseDown}
+    <CookieOverlay>
+  <CookieBox onMouseDown={onMouseDown}
   onMouseMove={onMouseMove}
   onMouseUp={onMouseUp}
   style={{ top: position.top, left: position.left, transform: 'translateX(-50%)' }}>
@@ -195,7 +196,9 @@ const onMouseUp = () => setDragging(false);
   </ModalContentBox>
 
      </Modal>
-    </CookieBox>
+    </CookieBox>    
+    </CookieOverlay>
+    
   );
 }
 

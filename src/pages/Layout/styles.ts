@@ -387,7 +387,6 @@ export const StyledFooterP = styled.p`
     margin-top: -10px;
   }
 `;
-
 export const StyledFooterLink = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;

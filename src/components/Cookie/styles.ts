@@ -1,6 +1,16 @@
 import styled from "@emotion/styled"
 import { NavLink } from "react-router-dom"
 
+
+export const CookieOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 9998;
+`;
+
+
 export const CookieBox = styled.div`
 position: fixed;
   bottom: 10%; /* фиксируем внизу */
@@ -19,7 +29,7 @@ position: fixed;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  z-index: 2147483647; /* наверху всех слоёв */
+  z-index: 2147; 
   
 
   @media (max-width: 1200px){
@@ -52,9 +62,11 @@ align-items: center;
 gap: 1vw;
 width: 100%;
 
-@media (max-width: 480px){
+  @media (max-width: 1000px){
     
-}
+
+gap: 8vw;
+  }
 `
 
 
