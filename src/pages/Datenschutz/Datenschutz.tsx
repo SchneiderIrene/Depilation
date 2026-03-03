@@ -63,7 +63,7 @@ function Datenschutz() {
             <li>- Art. 9 Abs. 2 lit. a DSGVO (Gesundheitsdaten)</li>
           </TextPstyled>
           <TextPstyled>
-            Details zur Verarbeitung durch Square Appointments (siehe Abschnitt VI).
+           Details zur Verarbeitung durch Bitrix24 (siehe Abschnitt VI).
           </TextPstyled>
           <TextSubTitle>3. Standortdaten (Geolocation) </TextSubTitle>
           <TextPstyled>Erhebung nur nach Browser-Freigabe.</TextPstyled>
@@ -94,7 +94,7 @@ function Datenschutz() {
           <TextPstyled>Zweck: Qualitätsverbesserung</TextPstyled>
           <TextPstyled>Rechtsgrundlage: Art. 6 Abs. 1 lit. a oder f DSGVO.</TextPstyled>
 
-          <TextSubTitle>7. Newsletter / E-Mail-Marketing (über Square Marketing)</TextSubTitle>
+          <TextSubTitle>7. Newsletter / E-Mail-Marketing (über Bitrix24 Marketing)</TextSubTitle>
           <TextPstyled>
             Erhobene Daten: E-Mail-Adresse, Name (optional), Öffnungs- und Klickdaten.
           </TextPstyled>
@@ -104,12 +104,10 @@ function Datenschutz() {
           <TextPstyled>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).</TextPstyled>
           <TextPstyled>Widerruf: Jederzeit per Abmelde-Link oder E-Mail.</TextPstyled>
           <TextPstyled>
-            Dienstleister: Square Europe Ltd. / Block, Inc. DPA abgeschlossen, Übermittlung USA:
-            EU-US DPF + SCC.
+           Dienstleister: Bitrix24 CRM — für Terminbuchung, CRM, Erinnerungen, Zahlungen und E-Mail-Marketing.
           </TextPstyled>
           <TextPstyled>
-            AV-Vertrag (Data Processing Addendum / DPA) abgeschlossen — Details:
-            https://squareup.com/legal/general/data-processing-terms.
+       AV-Vertrag (Data Processing Addendum / DPA) abgeschlossen für Bitrix24 — Details: DSGVO-konform.
           </TextPstyled>
 
           <TextSubTitle>8. Google Analytics 4 (GA4) </TextSubTitle>
@@ -150,17 +148,13 @@ function Datenschutz() {
           <li><TextPstyled>Einwilligung</TextPstyled></li>
           <li><TextPstyled>Vertragserfüllung</TextPstyled></li>
           <li><TextPstyled>Gesetzlicher Pflicht</TextPstyled></li>
-          <li><TextPstyled>Auftragsverarbeitung (mit DPA</TextPstyled>)</li>
+          <li><TextPstyled>Auftragsverarbeitung (mit DPA)</TextPstyled></li>
           <TextPstyled>Externe Dienstleister (AV-Verträge / DPA abgeschlossen):</TextPstyled>
-          <li><TextPstyled>Square Appointments / Square Marketing (Square Europe Ltd. / Block, Inc., USA und
-            EU-Niederlassungen) — für Terminbuchung, CRM, Erinnerungen, Zahlungen und
-            E-Mail-Marketing. Übermittlung in USA: EU-US Data Privacy Framework +
-            Standardvertragsklauseln. Details:
-            https://squareup.com/legal/general/data-processing-terms</TextPstyled>
+          <li><TextPstyled>Bitrix24 CRM — für Terminbuchung, CRM, Erinnerungen, Zahlungen und E-Mail-Marketing. Übermittlung in EU: DSGVO-konform.</TextPstyled>
             
           </li>
           <li><TextPstyled>Google Unternehmensprofil / Google Bewertungen</TextPstyled></li>
-          <li><TextPstyled>Zahlungsanbieter: Square Payments, Stripe, PayPal, Klarna</TextPstyled></li>
+          <li><TextPstyled>Zahlungsanbieter: Bitrix24 Payments, Stripe, PayPal, Klarna</TextPstyled></li>
           <li><TextPstyled>Hosting: siehe Abschnitt VII</TextPstyled></li>
           <TextPstyled>Google Unternehmensprofil:</TextPstyled>
           <TextPstyled>
@@ -185,7 +179,7 @@ function Datenschutz() {
           </TextPstyled>
           <TextPstyled>
             Falls wir Kunden aktiv zur Abgabe einer Bewertung einladen (z. B. automatisiert über
-            Square Appointments nach Termin), erfolgt dies nur auf Basis einer Einwilligung (Art. 6
+            Bitrix24 Appointments nach Termin), erfolgt dies nur auf Basis einer Einwilligung (Art. 6
             Abs. 1 lit. a DSGVO) oder berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO). Wir
             weisen in der Einladung auf die Datenschutzhinweise von Google hin.
           </TextPstyled>
@@ -202,7 +196,7 @@ function Datenschutz() {
           </TextPstyled>
 
           <li><TextPstyled>Google Ireland Ltd. (Analytics, USA-Übermittlung via EU-US DPF)</TextPstyled></li>
-          <li><TextPstyled>Zahlungsanbieter, z. B. Square Payments / Stripe Inc., PayPal, Crarna usw</TextPstyled></li>
+          <li><TextPstyled>Zahlungsanbieter, z. B. Bitrix24 Payments / Stripe Inc., PayPal, Crarna usw</TextPstyled></li>
           <li><TextPstyled>Hosting: Vercel Inc.</TextPstyled></li>
         </TextBox>
         <TextSubTitle>VII. Hosting</TextSubTitle>
@@ -245,7 +239,7 @@ function Datenschutz() {
               </tr>
 
               <tr>
-                <td><TextPstyled>Termin/Kontakt (Square)</TextPstyled></td>
+                <td><TextPstyled>Termin/Kontakt (Bitrix24)</TextPstyled></td>
                 <td><TextPstyled>Bis Bearbeitung + 6 Monate</TextPstyled></td>
                 <td><TextPstyled>Nachweis / Vertrag</TextPstyled></td>
               </tr>
@@ -263,7 +257,7 @@ function Datenschutz() {
               </tr>
 
               <tr>
-                <td><TextPstyled>Newsletter / Marketing (Square)</TextPstyled></td>
+                <td><TextPstyled>Newsletter / Marketing (Bitrix24)</TextPstyled></td>
                 <td><TextPstyled>Bis Widerruf / Abmeldung</TextPstyled></td>
                 <td><TextPstyled>Einwilligung</TextPstyled></td>
               </tr>
