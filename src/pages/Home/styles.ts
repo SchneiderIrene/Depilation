@@ -254,6 +254,7 @@ export const Foto1 = styled.img`
   width: 436px;
   height: 474px;
   margin-top: 4.9vw;
+  object-fit: cover;
 
   @media (max-width: 768px) {
     width: 300px;

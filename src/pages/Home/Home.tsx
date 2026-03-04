@@ -121,9 +121,9 @@ function Home() {
                 <Foto1Mobile src={FotoM} alt="Banner" loading="eager"  {...{ fetchPriority: "high" }}/>
               </ContainerFoto1>
               <ContainerFoto234>
-                <Foto2 src={FotoImg1} />
-                <Foto2 src={FotoImg2} />
-                <Foto2 src={FotoImg3} />
+                <Foto2 src={FotoImg1} alt="img"/>
+                <Foto2 src={FotoImg2} alt="img"/>
+                <Foto2 src={FotoImg3} alt="img"/>
               </ContainerFoto234>
             </Section1FotoMobile>
             <ContainerP>
@@ -156,7 +156,7 @@ function Home() {
                 <Button name={t('home.button1')} bgColor />
               </StyledARoute>
               <StyledARoute
-                href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                href="https://t.me/kontakt_AliS"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -170,15 +170,17 @@ function Home() {
                 href="https://koalendar.com/e/alina-depilation"
                 target="_blank"
                 rel="noopener noreferrer"
+                 
               >
                 <Button name={t('home.button1')} bgColor />
               </StyledARoute>
             </ButtonBox>
             <ButtonBox>
               <StyledARoute
-                href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                href="https://t.me/kontakt_AliS"
                 target="_blank"
                 rel="noopener noreferrer"
+                 
               >
                 <Button name={t('home.button2')} colorText />
               </StyledARoute>
@@ -187,12 +189,12 @@ function Home() {
         </Section1Info>
         <Section1Foto>
           <ContainerFoto1>
-            <Foto1 src={Foto} />
+            <Foto1 src={Foto} alt="foto"/>
           </ContainerFoto1>
           <ContainerFoto234>
-            <Foto2 src={FotoImg1} />
-            <Foto2 src={FotoImg2} />
-            <Foto2 src={FotoImg3} />
+            <Foto2 src={FotoImg1} alt="img"/>
+            <Foto2 src={FotoImg2} alt="img"/>
+            <Foto2 src={FotoImg3} alt="img"/>
           </ContainerFoto234>
         </Section1Foto>
       </Section1>
@@ -258,9 +260,9 @@ function Home() {
             {t('home.section3.p2')}
           </StyledSection2P>
           <ContainerAboutMe>
-            <FotoAboutMe src={FotoAM} />
+            <FotoAboutMe src={FotoAM} alt="foto"/>
             <FotoButtonContainerTablett>
-              <FotoAboutMeTablett src={FotoAMTablett} />
+              <FotoAboutMeTablett src={FotoAMTablett} alt="foto"/>
               <ButtonBoxSection3Tablett>
                 <Button bgColor name={t('home.button1')} />
                 <Button colorText name={t('home.button2')} />
@@ -306,8 +308,24 @@ function Home() {
                 {t('home.section3.text3_2')}
               </AboutMeDescription>
               <ButtonBoxSection3>
-                <Button bgColor name={t('home.button1')} />
-                <Button colorText name={t('home.button2')} />
+                <ButtonBox><StyledARoute
+                href="https://koalendar.com/e/alina-depilation"
+                target="_blank"
+                rel="noopener noreferrer"
+                
+              >
+                <Button name={t('home.button1')} bgColor />
+              </StyledARoute></ButtonBox>
+                <ButtonBox><StyledARoute
+                href="https://t.me/kontakt_AliS"
+                target="_blank"
+                rel="noopener noreferrer"
+                
+              >
+                <Button name={t('home.button2')} colorText />
+              </StyledARoute></ButtonBox>
+                
+                
               </ButtonBoxSection3>
             </ContainerAboutMeText>
           </ContainerAboutMe>
@@ -366,7 +384,7 @@ function Home() {
               <ContactTitle> {t('home.section5.socialMedia')}</ContactTitle>
               <ContactPSocialMediaBox>
                 <a
-                  href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                  href="https://t.me/kontakt_AliS"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

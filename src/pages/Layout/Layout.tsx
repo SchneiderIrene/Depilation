@@ -73,7 +73,7 @@ function Layout({ children }: LayoutProps) {
         <HeaderContainer>
           <LogoMenuContainer>
             <HashLink smooth to="/#top">
-              <LogoImg src={Logo}></LogoImg>
+              <LogoImg src={Logo} alt="logo"></LogoImg>
             </HashLink>
             <MenuContainer>
               <StyledHashLink smooth to="/#services">
@@ -155,7 +155,7 @@ function Layout({ children }: LayoutProps) {
           <FooterContainer>
             <LogoMenuContainerF>
               <HashLink smooth to="/#top">
-                <LogoImg src={Logo}></LogoImg>
+                <LogoImg src={Logo} alt="logo"></LogoImg>
               </HashLink>
               <MenuContainerF>
                 <StyledHashLinkF smooth to="/#services">

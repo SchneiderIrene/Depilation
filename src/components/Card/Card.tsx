@@ -23,14 +23,14 @@ function Card({
   return (
     <CardComponent>
       <CardFoto>
-        <StyledImg src={srcImg} />
+        <StyledImg src={srcImg} alt="img"/>
         <TextBox>
           <StyledPTitle>{title}</StyledPTitle>
           <StyledPDescription>{description}</StyledPDescription>
         </TextBox>
       </CardFoto>
       <ButtonBox>
-        <StyledARoute href={button1Href} target={button1Target}>
+        <StyledARoute href={button1Href} target={button1Target}  role="button">
 <Button colorText>{nameButton1}</Button>
 
         </StyledARoute>
@@ -39,6 +39,7 @@ function Card({
           href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
           target="_blank"
           rel="noopener noreferrer"
+          role="button"
         >
           <Button bgColor>{nameButton2}</Button>
         </StyledARoute>
