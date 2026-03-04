@@ -36,7 +36,7 @@ function Card({
         </StyledARoute>
         
         <StyledARoute
-          href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+          href="https://t.me/kontakt_AliS"
           target="_blank"
           rel="noopener noreferrer"
           role="button"

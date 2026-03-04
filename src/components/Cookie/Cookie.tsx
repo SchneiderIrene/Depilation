@@ -68,7 +68,7 @@ const [position, setPosition] = useState({ top: window.innerHeight * 0.3, left: 
 
 
   const saveConsent = (type: ConsentType, withAds = false) => {
-    localStorage.setItem("cookieConsent", type!);
+    // localStorage.setItem("cookieConsent", type!); для теста куков
     setConsentStatus(type);
     setVisible(false);
     if (type !== "declined") loadGoogleTagManager(withAds);
