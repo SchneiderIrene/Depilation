@@ -78,11 +78,14 @@ import {
   ServiceImg4,
 } from 'assets/index';
 
+import SeoComponent from 'components/SeoComponent/SeoComponent';
+
 function Home() {
   const { t } = useTranslation();
 
   return (
-    <HomeContainer>
+    <> <HomeContainer>
+          <SeoComponent description={t('seo.description')}/>
       <StyledH1Tablett>{t('home.section1.h1')}</StyledH1Tablett>
       <Section1 id="top">
         <Section1Info>
@@ -387,6 +390,8 @@ function Home() {
         </MapAddressContainer>
       </Section5Map>
     </HomeContainer>
+    </>
+   
   );
 }
 export default Home;
