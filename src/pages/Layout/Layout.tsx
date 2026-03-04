@@ -108,7 +108,7 @@ function Layout({ children }: LayoutProps) {
               </StyledARoute>
               <IconContainer>
                 <a
-                  href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
+                   href="https://t.me/kontakt_AliS"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -190,8 +190,7 @@ function Layout({ children }: LayoutProps) {
                 </StyledARoute>
                 <IconContainerF>
                   <a
-                    href="https://t.me/+9Qo9jOszw8oxZTEy?fbclid=PAZXh0bgNhZW0CMTEAAadPyFbgioNgw2T8IHrgPrEApEfzMIneGpNtKH3nStrHKfZnCKR3fKAnhBM5_g_aem_Z5KMv5_GHOX6jOh0u4qZVA"
-                    target="_blank"
+                    href="https://t.me/kontakt_AliS"
                     rel="noopener noreferrer"
                   >
                     <IconSVG path={IconTelegram} />
@@ -249,7 +248,7 @@ function Layout({ children }: LayoutProps) {
               © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены
             </StyledFooterP>
             <DatenSchutzImpressumBox>
-              <StyledFooterLink to="/impressum">Impressum</StyledFooterLink>
+              <StyledFooterLink to="/impressum">Impressum  AGB</StyledFooterLink>
               <StyledFooterLink to="/datenschutz">Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
