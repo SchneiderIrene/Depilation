@@ -79,13 +79,19 @@ import {
 } from 'assets/index';
 
 import SeoComponent from 'components/SeoComponent/SeoComponent';
+import { Helmet } from 'react-helmet';
 
 function Home() {
   const { t } = useTranslation();
 
   return (
-    <> <HomeContainer>
-          <SeoComponent description={t('seo.description')}/>
+    <> 
+    
+    <Helmet>
+  <link rel="preload" as="image" href={Foto} />
+</Helmet>
+    <SeoComponent description={t('seo.description')}/>
+    <HomeContainer>
       <StyledH1Tablett>{t('home.section1.h1')}</StyledH1Tablett>
       <Section1 id="top">
         <Section1Info>
@@ -108,9 +114,11 @@ function Home() {
               </StyledH2>
             </StyledTitle>
             <Section1FotoMobile>
+                  
               <ContainerFoto1>
-                <Foto1 src={Foto} />
-                <Foto1Mobile src={FotoM} />
+
+                <Foto1 src={Foto} alt="Banner" loading="eager"  {...{ fetchPriority: "high" }}/>
+                <Foto1Mobile src={FotoM} alt="Banner" loading="eager"  {...{ fetchPriority: "high" }}/>
               </ContainerFoto1>
               <ContainerFoto234>
                 <Foto2 src={FotoImg1} />
