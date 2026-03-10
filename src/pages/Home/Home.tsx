@@ -113,10 +113,8 @@ function Home() {
                 {t('home.section1.h2.2')}
               </StyledH2>
             </StyledTitle>
-            <Section1FotoMobile>
-                  
+            <Section1FotoMobile>  
               <ContainerFoto1>
-
                 <Foto1 src={Foto} alt="Banner" loading="eager"  {...{ fetchPriority: "high" }}/>
                 <Foto1Mobile src={FotoM} alt="Banner" loading="eager"  {...{ fetchPriority: "high" }}/>
               </ContainerFoto1>

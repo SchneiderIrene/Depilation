@@ -1,6 +1,8 @@
 
 
 import Cookie from 'components/Cookie/Cookie';
+import ScrollToTop from 'components/ScrollToTop/ScrollToTop';
+
 import Datenschutz from 'pages/Datenschutz/Datenschutz';
 import Home from 'pages/Home/Home';
 import Impressum from 'pages/Impressum/Impressum';
@@ -12,6 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
      <Layout>
       <Routes>
           <Route path="/" element={<Home />} />

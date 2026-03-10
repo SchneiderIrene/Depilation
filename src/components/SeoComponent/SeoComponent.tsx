@@ -7,7 +7,7 @@ interface SeoComponentProps {
  
 }
 
-function SeoComponent({ title = "Депиляция и косметология в Гамбурге | Алина | Haarentfernung & Kosmetik in Hamburg | Alina", description }: SeoComponentProps) {
+function SeoComponent({ title = "Депиляция и косметология в Гамбурге | Алина | Haarentfernung & Kosmetik in Hamburg | Alina Perfect Skin Beauty", description }: SeoComponentProps) {
 
 
   return (

@@ -526,6 +526,7 @@ export const ButtonBoxSection3 = styled.div`
 
   @media (max-width: 430px) {
     flex-direction: column;
+    align-items: center;
     margin-top: 20px;
   }
 `;
@@ -539,8 +540,7 @@ export const ButtonBoxSection3Tablett = styled.div`
     gap: 20px;
   }
 
-  @media (max-width: 430px) {
-  }
+
 `;
 
 export const Section4Certificate = styled.section`

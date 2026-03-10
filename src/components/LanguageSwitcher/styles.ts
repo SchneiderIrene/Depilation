@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 
 export const LanguageSwitcherIcon = styled.svg`
+
  width: 40px;
   color: #5B4F4B; // исходный цвет
   transition: color 0.3s;

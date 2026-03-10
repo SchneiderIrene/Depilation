@@ -7,7 +7,7 @@ import { ModalContentBox, StyledInput, StyledLabel, TextBox, TextModel } from "c
 
 
 type ConsentType = "accepted" | "declined" | "analytics-only" | "custom" | null;
-localStorage.removeItem("cookieConsent")
+// localStorage.removeItem("cookieConsent")
 function Cookie() {
   const { t } = useTranslation();
 
@@ -68,7 +68,7 @@ const [position, setPosition] = useState({ top: window.innerHeight * 0.3, left: 
 
 
   const saveConsent = (type: ConsentType, withAds = false) => {
-    // localStorage.setItem("cookieConsent", type!); для теста куков
+    localStorage.setItem("cookieConsent", type!);
     setConsentStatus(type);
     setVisible(false);
     if (type !== "declined") loadGoogleTagManager(withAds);
