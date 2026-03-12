@@ -399,6 +399,8 @@ display: inline;
   line-height: 1.2;
   letter-spacing: 0em;
   font-family: LatoRegular, sans-serif;
+  user-select: none;              
+  touch-action: manipulation; 
 `;
 
 export const DatenSchutzImpressumBox = styled.div`
@@ -406,6 +408,9 @@ export const DatenSchutzImpressumBox = styled.div`
   gap: 122px;
 
   @media (max-width: 768px) {
-    gap: 20px;
+  
+     gap: 40px;                  
+    flex-direction: row;          
+    justify-content: center;      
   }
 `;
