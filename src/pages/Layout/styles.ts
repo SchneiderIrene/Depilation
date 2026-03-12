@@ -387,7 +387,7 @@ export const StyledFooterP = styled.p`
     margin-top: -10px;
   }
 `;
-export const StyledFooterLink = styled(NavLink)`
+export const StyledFooterLink = styled.p`
 display: inline-block;
   padding: 12px 8px;           
   text-decoration: none;
@@ -403,18 +403,7 @@ display: inline-block;
   touch-action: manipulation; 
 `;
 
-export const StyledFooterAnchor = styled.a`
-  display: inline-block;
-  padding: 12px 8px;
-  text-decoration: none;
-  cursor: pointer;
-  color: #ae9c96;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2;
-  font-family: LatoRegular, sans-serif;
-`;
+
 
 export const DatenSchutzImpressumBox = styled.div`
   display: flex;

@@ -29,7 +29,6 @@ import {
   MobileMenuContainer,
   MobileMenuIcon,
   StyledARoute,
-  StyledFooterAnchor,
   StyledFooterLink,
   StyledFooterP,
   StyledHashLink,
@@ -53,8 +52,11 @@ import { useState } from 'react';
 import ModalMenu from 'components/ModalMenu/ModalMenu';
 import { StyledSpanMobile } from 'pages/Home/styles';
 import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from 'react-router-dom';
 
 function Layout({ children }: LayoutProps) {
+
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -249,8 +251,9 @@ function Layout({ children }: LayoutProps) {
               © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены
             </StyledFooterP>
             <DatenSchutzImpressumBox>
-              <StyledFooterLink to="/impressum">Impressum  AGB</StyledFooterLink>
-              <StyledFooterLink to="/datenschutz">Datenschutz</StyledFooterLink>
+             
+              <StyledFooterLink  onClick={()=> navigate("/impressum")}>Impressum  AGB</StyledFooterLink>
+              <StyledFooterLink  onClick={()=> navigate("/datenschutz")}>Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>
