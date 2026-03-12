@@ -388,7 +388,7 @@ export const StyledFooterP = styled.p`
   }
 `;
 export const StyledFooterLink = styled(NavLink)`
-display: inline;
+display: inline-block;
   padding: 12px 8px;           
   text-decoration: none;
   cursor: pointer;

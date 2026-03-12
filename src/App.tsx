@@ -18,9 +18,9 @@ function App() {
      <Layout>
       <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<div>"Page not found"</div>} />
           <Route path="/datenschutz" element={<Datenschutz/>} />
           <Route path="/impressum" element={<Impressum/>} />
+          <Route path="*" element={<div>"Page not found"</div>} />
         </Routes>
     </Layout>
     <Cookie/>
