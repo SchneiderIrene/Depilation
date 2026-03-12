@@ -249,9 +249,8 @@ function Layout({ children }: LayoutProps) {
               © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены
             </StyledFooterP>
             <DatenSchutzImpressumBox>
-             
-              <StyledFooterAnchor href="/impressum">Impressum  AGB</StyledFooterAnchor>
-              <StyledFooterAnchor href="/datenschutz">Datenschutz</StyledFooterAnchor>
+              <StyledFooterLink to="/impressum">Impressum  AGB</StyledFooterLink>
+              <StyledFooterLink to="/datenschutz">Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>
