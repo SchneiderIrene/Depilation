@@ -52,11 +52,11 @@ import { useEffect, useState } from 'react';
 import ModalMenu from 'components/ModalMenu/ModalMenu';
 import { StyledSpanMobile } from 'pages/Home/styles';
 import { HashLink } from 'react-router-hash-link';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 
 function Layout({ children }: LayoutProps) {
 
-  const navigate = useNavigate();
+
   const { t } = useTranslation();
 
     const location = useLocation();
@@ -66,13 +66,9 @@ function Layout({ children }: LayoutProps) {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const handleNavigate = (path: string) => {
-    // если кликнули по текущему пути, принудительно перезапускаем навигацию
-    if (location.pathname === path) {
-      navigate(0); // перезагрузка страницы
-    } else {
-      navigate(path);
-    }
+   const handleNavigate = (href: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.assign(href); // полностью загружает страницу
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -268,8 +264,8 @@ function Layout({ children }: LayoutProps) {
             </StyledFooterP>
             <DatenSchutzImpressumBox>
              
-              <StyledFooterLink  onClick={()=> handleNavigate("/impressum")}>Impressum  AGB</StyledFooterLink>
-              <StyledFooterLink  onClick={()=> handleNavigate("/datenschutz")}>Datenschutz</StyledFooterLink>
+              <StyledFooterLink  href="/impressum" onClick={(e) => handleNavigate("/impressum", e)}>Impressum  AGB</StyledFooterLink>
+              <StyledFooterLink  href="/datenschutz" onClick={(e) => handleNavigate("/datenschutz", e)}>Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>
