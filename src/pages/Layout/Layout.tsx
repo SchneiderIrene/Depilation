@@ -48,16 +48,32 @@ import {
 } from 'assets';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import type { LayoutProps } from './types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ModalMenu from 'components/ModalMenu/ModalMenu';
 import { StyledSpanMobile } from 'pages/Home/styles';
 import { HashLink } from 'react-router-hash-link';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Layout({ children }: LayoutProps) {
 
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+    const location = useLocation();
+
+  useEffect(() => {
+    // При каждом изменении пути скроллим наверх (опционально)
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  const handleNavigate = (path: string) => {
+    // если кликнули по текущему пути, принудительно перезапускаем навигацию
+    if (location.pathname === path) {
+      navigate(0); // перезагрузка страницы
+    } else {
+      navigate(path);
+    }
+  };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -252,8 +268,8 @@ function Layout({ children }: LayoutProps) {
             </StyledFooterP>
             <DatenSchutzImpressumBox>
              
-              <StyledFooterLink  onClick={()=> navigate("/impressum")}>Impressum  AGB</StyledFooterLink>
-              <StyledFooterLink  onClick={()=> navigate("/datenschutz")}>Datenschutz</StyledFooterLink>
+              <StyledFooterLink  onClick={()=> handleNavigate("/impressum")}>Impressum  AGB</StyledFooterLink>
+              <StyledFooterLink  onClick={()=> handleNavigate("/datenschutz")}>Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>
