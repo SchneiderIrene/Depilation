@@ -29,6 +29,7 @@ import {
   MobileMenuContainer,
   MobileMenuIcon,
   StyledARoute,
+  StyledFooterAnchor,
   StyledFooterLink,
   StyledFooterP,
   StyledHashLink,
@@ -248,8 +249,8 @@ function Layout({ children }: LayoutProps) {
               © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены
             </StyledFooterP>
             <DatenSchutzImpressumBox>
-              <StyledFooterLink to="/impressum">Impressum  AGB</StyledFooterLink>
-              <StyledFooterLink to="/datenschutz">Datenschutz</StyledFooterLink>
+              <StyledFooterAnchor  href="/impressum">Impressum  AGB</StyledFooterAnchor>
+              <StyledFooterAnchor href="/datenschutz">Datenschutz</StyledFooterAnchor>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>
