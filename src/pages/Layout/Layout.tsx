@@ -59,8 +59,11 @@ function Layout({ children }: LayoutProps) {
 
   const { t } = useTranslation();
 
-    const location = useLocation();
+  
     const navigate = useNavigate();
+  const location = useLocation();
+
+  const key = location.pathname;
 
 
   useEffect(() => {
@@ -68,14 +71,7 @@ function Layout({ children }: LayoutProps) {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const goTo = (path: string) => {
-    if (location.pathname === path) {
-      // принудительно обновляем компонент, если уже на этом пути
-      navigate(path, { replace: true });
-    } else {
-      navigate(path);
-    }
-  };
+  
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -268,10 +264,10 @@ function Layout({ children }: LayoutProps) {
             <StyledFooterP>
               © 2025 Алина — косметолог & преподаватель |<StyledSpanMobile /> Все права защищены
             </StyledFooterP>
-            <DatenSchutzImpressumBox>
+            <DatenSchutzImpressumBox key={key}>
              
-              <StyledFooterLink  onClick={() => goTo("/impressum")}>Impressum  AGB</StyledFooterLink>
-              <StyledFooterLink  onClick={() => goTo("/datenschutz")}>Datenschutz</StyledFooterLink>
+              <StyledFooterLink  onClick={() => navigate("/impressum")}>Impressum  AGB</StyledFooterLink>
+              <StyledFooterLink  onClick={() => navigate("/datenschutz")}>Datenschutz</StyledFooterLink>
             </DatenSchutzImpressumBox>
           </DatenschutzContainer>
         </FooterBox>

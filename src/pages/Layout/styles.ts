@@ -387,7 +387,7 @@ export const StyledFooterP = styled.p`
     margin-top: -10px;
   }
 `;
-export const StyledFooterLink = styled.a`
+export const StyledFooterLink = styled.p`
 display: inline-block;
   padding: 12px 8px;           
   text-decoration: none;
