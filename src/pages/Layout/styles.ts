@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 export const LayoutComponent = styled.div`
@@ -7,7 +6,7 @@ export const LayoutComponent = styled.div`
   flex-direction: column;
 
   width: 100%;
-min-height: 100vh;
+  min-height: 100vh;
 `;
 
 export const Header = styled.header`
@@ -16,7 +15,7 @@ export const Header = styled.header`
   top: 0;
   z-index: 10;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
   }
 `;
 
@@ -29,24 +28,41 @@ export const HeaderContainer = styled.div`
   width: 100%;
   padding: 20px clamp(20px, 10.6vw, 200px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1550px) {
+    justify-content: space-between;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  @media (max-width: 1350px) {
+    justify-content: space-between;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding-left: clamp(2rem, 4vw, 4rem);
+    padding-right: clamp(2rem, 4vw, 4rem);
+  }
+
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-    @media (max-width: 430px) {
+  @media (max-width: 430px) {
     padding-left: 22px;
     padding-right: 22px;
   }
-  
 `;
 export const LogoMenuContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1550px) {
     gap: 20px;
+  }
+
+  @media (max-width: 1150px) {
+    gap: 10px;
   }
 
   @media (max-width: 430px) {
@@ -58,7 +74,11 @@ export const MenuContainer = styled.div`
 
   gap: 28px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1150px) {
+    gap: 15px;
+  }
+
+  @media (max-width: 1000px) {
     gap: 18px;
   }
 `;
@@ -91,7 +111,9 @@ export const StyledHashLink = styled(HashLink)`
   :hover {
     color: #7b6f6b;
   }
-
+  @media (max-width: 1150px) {
+    font-size: 18px;
+  }
   @media (max-width: 430px) {
     display: none;
   }
@@ -118,9 +140,9 @@ export const LogoImg = styled.img`
     filter: brightness(0.9);
   }
 
-    @media (max-width: 430px) {
-      width: 50px;
-    }
+  @media (max-width: 430px) {
+    width: 50px;
+  }
 `;
 
 export const AddressIconContainer = styled.div`
@@ -130,9 +152,9 @@ export const AddressIconContainer = styled.div`
 `;
 
 export const StyledARoute = styled.a`
-text-decoration: none;
-color: inherit;
-`
+  text-decoration: none;
+  color: inherit;
+`;
 export const IconMapsSVG = styled.svg`
   color: inherit;
   margin: 0;
@@ -165,7 +187,7 @@ export const ContactContainer = styled.div`
   display: flex;
   gap: 36px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     gap: 20px;
   }
 `;
@@ -182,7 +204,7 @@ export const AddressContainer = styled.div`
     color: #ae9c96;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;
@@ -190,7 +212,6 @@ export const AddressContainer = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   gap: 20px;
- 
 
   @media (max-width: 430px) {
     gap: 10px;
@@ -202,7 +223,6 @@ export const MobileMenuIcon = styled.img`
 
   @media (max-width: 430px) {
     display: block;
-    
   }
 `;
 
@@ -212,7 +232,7 @@ export const Main = styled.main`
   width: 100%;
   /* min-height: 100vh; */
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     padding: 65px 0;
   }
   @media (max-width: 430px) {
@@ -226,7 +246,7 @@ export const Footer = styled.footer`
   padding-bottom: 20px;
   padding-top: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
   }
 `;
 
@@ -235,19 +255,32 @@ export const FooterBox = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
-   
 `;
 export const FooterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-    gap: clamp(20px, 10.6vw, 200px);
+  gap: clamp(20px, 10.6vw, 200px);
   /* justify-content: space-between; */
   width: 100%;
   padding: 18px clamp(20px, 10.6vw, 200px);
 
-  @media (max-width: 768px) {
+
+    @media (max-width: 1550px) {
+    justify-content: space-between;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  @media (max-width: 1350px) {
+    justify-content: space-between;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding-left: clamp(2rem, 4vw, 4rem);
+    padding-right: clamp(2rem, 4vw, 4rem);
+  }
+
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 0px;
@@ -257,31 +290,31 @@ export const FooterContainer = styled.div`
     padding-right: 40px; */
     padding-bottom: 10px;
     padding-top: 10px;
-    
   }
 `;
 
 export const MenuContainerFMobile = styled.div`
-display: none;
+  display: none;
 
-   @media (max-width: 430px) {
+  @media (max-width: 430px) {
     display: flex;
     gap: 15px;
-    margin-top: 30px ;
-
+    margin-top: 30px;
   }
-`
+`;
 
 export const MenuContainerF = styled.div`
   display: flex;
   gap: 28px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1150px) {
+    gap: 15px;
+  }
+  @media (max-width: 1000px) {
     gap: 35px;
   }
-    @media (max-width: 430px) {
-     display: none;
-
+  @media (max-width: 430px) {
+    display: none;
   }
 `;
 
@@ -301,19 +334,28 @@ export const StyledHashLinkF = styled(HashLink)`
   :hover {
     color: #7b6f6b;
   }
+
+    @media (max-width: 1150px) {
+    font-size: 18px;
+  }
 `;
 
 export const LogoMenuContainerF = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
+  @media (max-width: 1550px) {
+    gap: 20px;
+  }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1150px) {
+    gap: 10px;
+  }
+  @media (max-width: 1000px) {
     gap: 40px;
   }
 
   @media (max-width: 430px) {
-
   }
 `;
 
@@ -321,13 +363,14 @@ export const AddressIconContainerF = styled.div`
   display: flex;
   align-items: center;
   gap: 36px;
+  
 `;
 
 export const AdressContainerFTablett = styled.div`
   display: none;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -340,13 +383,15 @@ export const AdressContainerFTablett = styled.div`
 export const ContactContainerF = styled.div`
   display: flex;
   gap: 36px;
-
-  @media (max-width: 768px) {
-    gap: 20px;
-      
+    @media (max-width: 1150px) {
+    gap: 15px;
   }
-    @media (max-width: 430px) {
-    
+
+  
+  @media (max-width: 1000px) {
+    gap: 20px;
+  }
+  @media (max-width: 430px) {
   }
 `;
 
@@ -366,7 +411,7 @@ export const DatenschutzContainer = styled.div`
   gap: 122px;
   margin-top: 16px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     gap: 20px;
   }
@@ -382,14 +427,16 @@ export const StyledFooterP = styled.p`
   line-height: 1.2;
   letter-spacing: 0em;
 
+  
+
   @media (max-width: 430px) {
     text-align: center;
     margin-top: -10px;
   }
 `;
 export const StyledFooterLink = styled.p`
-display: inline-block;
-  padding: 12px 8px;           
+  display: inline-block;
+  padding: 12px 8px;
   text-decoration: none;
   cursor: pointer;
   color: #ae9c96;
@@ -399,20 +446,17 @@ display: inline-block;
   line-height: 1.2;
   letter-spacing: 0em;
   font-family: LatoRegular, sans-serif;
-  user-select: none;              
-  touch-action: manipulation; 
+  user-select: none;
+  touch-action: manipulation;
 `;
-
-
 
 export const DatenSchutzImpressumBox = styled.div`
   display: flex;
   gap: 122px;
 
-  @media (max-width: 768px) {
-  
-     gap: 40px;                  
-    flex-direction: row;          
-    justify-content: center;      
+  @media (max-width: 1000px) {
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
   }
 `;

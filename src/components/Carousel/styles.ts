@@ -8,7 +8,7 @@ export const CarouselContainer = styled.div`
   margin: 50px auto;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     max-width: 100%;
   }
 `;
@@ -42,7 +42,6 @@ export const ArrowNavSVG = styled.svg`
   &:hover {
     color: #ae9c96;
   }
-
 `;
 
 export const StyledArrow = styled.div<{ left?: boolean; right?: boolean }>`
@@ -56,11 +55,10 @@ export const StyledArrow = styled.div<{ left?: boolean; right?: boolean }>`
   margin: 0;
   padding: 0;
 
-   @media (max-width: 768px) {
-   display: none;
+  @media (max-width: 1000px) {
+    display: none;
   }
 
-   @media (max-width: 768px) {
-  
+  @media (max-width: 1000px) {
   }
 `;

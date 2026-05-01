@@ -29,7 +29,7 @@ function Carousel() {
           autoWidth: true,
           drag: true,
           breakpoints: {
-            768: {
+            1000: {
               gap: '30px',
             },
             430: {

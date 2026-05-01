@@ -1,28 +1,38 @@
 import styled from '@emotion/styled';
 
-
-
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
   align-items: center;
-
 `;
 
 export const Section1 = styled.section`
-
   display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 2.2vw;
-  
+
   padding: 0 clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   /* width: 100%; */
+  @media (max-width: 1550px) {
+    width: 100%;
+    justify-content: space-between;
+    gap: clamp(1.5rem, 3vw, 3rem);
+    padding-left: clamp(2rem, 5vw, 5rem);
+    padding-right: clamp(2rem, 5vw, 5rem);
+  }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
+    align-items: start;
+    gap: clamp(1rem, 2vw, 2rem);
+    padding-left: clamp(2rem, 4vw, 3.75rem);
+    padding-right: clamp(2rem, 4vw, 3.75rem);
+  }
+
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 60px;
@@ -34,8 +44,6 @@ export const Section1 = styled.section`
   }
 `;
 
-
-
 export const Section1Info = styled.div`
   display: flex;
   flex-direction: column;
@@ -44,14 +52,21 @@ export const Section1Info = styled.div`
   gap: 2vw;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    gap: 80px;
+  }
+
+  @media (max-width: 1150px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 1000px) {
     width: 100%;
     flex-direction: row;
     width: 350px;
     justify-content: left;
     gap: 53px;
   }
- 
 `;
 
 export const StyledTitle = styled.div`
@@ -71,7 +86,11 @@ export const StyledH1 = styled.h1`
   line-height: 1.4;
   letter-spacing: 0.02em;
 
-  @media (min-width: 431px) and (max-width: 768px) {
+  @media (max-width: 1300px) {
+    font-size: clamp(2rem, 2.69vw, 2.4375rem);
+    line-height: 1.32;
+  }
+  @media (min-width: 431px) and (max-width: 1000px) {
     display: none;
   }
 
@@ -91,7 +110,7 @@ export const StyledH1Tablett = styled.h1`
   padding-left: 32px;
   padding-right: 32px;
 
-  @media (min-width: 431px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 1000px) {
     display: block;
   }
 `;
@@ -103,7 +122,12 @@ export const StyledH2 = styled.h2`
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+    line-height: 1.15;
+  }
+
+  @media (max-width: 1000px) {
     font-size: 28px;
     line-height: 0.6;
   }
@@ -116,14 +140,14 @@ export const StyledH2 = styled.h2`
 export const StyledSpan = styled.span`
   display: none;
 
-  @media (min-width: 431px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 1000px) {
     display: block;
   }
 `;
 
 export const StyledSpanDesktop = styled.span`
-display: block;
-  @media (max-width: 768px) {
+  display: block;
+  @media (max-width: 1000px) {
     display: none;
   }
 `;
@@ -140,19 +164,25 @@ export const Section1InfoText = styled.div`
   flex-direction: column;
   gap: 3.125vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    gap: 50px;
+  }
+  @media (max-width: 1150px) {
+    gap: 40px;
+  }
+  @media (max-width: 1000px) {
     gap: 55px;
   }
 `;
 
 export const ContainerP = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;
 export const ContainerPTablett = styled.div`
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: block;
   }
   @media (max-width: 430px) {
@@ -175,7 +205,11 @@ export const StyledP = styled.p`
   line-height: 1.19;
   letter-spacing: 0em;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    font-size: clamp(1.15rem, 1.67vw, 1.55rem);
+    line-height: 1.22;
+  }
+  @media (max-width: 1000px) {
     font-size: 22px;
     line-height: 1.23;
   }
@@ -189,23 +223,26 @@ export const ButtonContainer = styled.div`
   gap: 1.38vw;
   margin-top: 0.95vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;
 
 export const ButtonBox = styled.div`
   width: 273px;
+
+  @media (max-width: 1550px) {
+    width: 230px;
+  }
 `;
 export const ButtonBoxModal = styled.div`
   width: 100%;
 `;
 
-
 export const StyledARoute = styled.a`
-text-decoration: none;
-color: inherit;
-`
+  text-decoration: none;
+  color: inherit;
+`;
 
 export const ButtonContainerTablett = styled.div`
   display: none;
@@ -213,7 +250,7 @@ export const ButtonContainerTablett = styled.div`
   flex-direction: column;
   gap: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: flex;
     margin-top: -23px;
   }
@@ -226,7 +263,11 @@ export const Section1Foto = styled.div`
   display: flex;
   gap: 1.73vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1150px) {
+    gap: 7px;
+  }
+
+  @media (max-width: 1000px) {
     flex-direction: column;
     gap: 0px;
   }
@@ -256,7 +297,16 @@ export const Foto1 = styled.img`
   margin-top: 4.9vw;
   object-fit: cover;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    width: 414.2px;
+    height: 450.3px;
+  }
+
+  @media (max-width: 1150px) {
+    width: 393.49px;
+    height: 427.785px;
+  }
+  @media (max-width: 1000px) {
     width: 300px;
     height: 327px;
   }
@@ -276,7 +326,7 @@ export const Foto1Mobile = styled.img`
 `;
 
 export const Foto2 = styled.img`
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 92px;
     height: 82px;
   }
@@ -292,7 +342,13 @@ export const ContainerFoto234 = styled.div`
   gap: 30px;
   margin-top: 4.9vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
+    gap: 18px;
+  }
+  @media (max-width: 1150px) {
+    gap: 7px;
+  }
+  @media (max-width: 1000px) {
     flex-direction: row;
     gap: 12px;
   }
@@ -309,7 +365,7 @@ export const Section2 = styled.section`
   padding: 80px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   width: 100%;
   background-color: #f1ece6;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 60px;
@@ -351,7 +407,7 @@ export const StyledSection2P = styled.p`
   letter-spacing: 0em;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     line-height: 0.6;
   }
 
@@ -367,7 +423,7 @@ export const CardContainer = styled.div`
   gap: 50px;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 595px;
     display: grid;
     grid-template-columns: repeat(2, 273px);
@@ -389,7 +445,7 @@ export const Section3 = styled.section`
   padding: 80px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 60px;
@@ -409,7 +465,7 @@ export const Section3TitleContainer = styled.div`
   gap: 40px;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     gap: 48px;
   }
 
@@ -423,7 +479,7 @@ export const ContainerAboutMe = styled.div`
   gap: 98px;
   padding-top: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 704px;
     gap: 25px;
   }
@@ -437,7 +493,7 @@ export const ContainerAboutMe = styled.div`
 export const FotoButtonContainerTablett = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -450,7 +506,7 @@ export const FotoButtonContainerTablett = styled.div`
 export const FotoAboutMe = styled.img`
   width: 490px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 
@@ -461,7 +517,7 @@ export const FotoAboutMe = styled.img`
 export const FotoAboutMeTablett = styled.img`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: block;
     width: 344px;
     height: 298px;
@@ -477,7 +533,7 @@ export const ContainerAboutMeText = styled.div`
   width: 568px;
   margin-top: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     margin-top: 0;
   }
 
@@ -510,8 +566,6 @@ export const AboutMeDescription = styled.p`
   text-align: center;
   white-space: pre-line;
   text-align: start;
-
-
 `;
 
 export const ButtonBoxSection3 = styled.div`
@@ -520,7 +574,7 @@ export const ButtonBoxSection3 = styled.div`
   width: 100%;
   margin-top: 6px;
 
-  @media (min-width: 431px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 1000px) {
     display: none;
   }
 
@@ -534,13 +588,11 @@ export const ButtonBoxSection3 = styled.div`
 export const ButtonBoxSection3Tablett = styled.div`
   display: none;
 
-  @media (min-width: 431px) and (max-width: 768px) {
+  @media (min-width: 431px) and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-
-
 `;
 
 export const Section4Certificate = styled.section`
@@ -550,13 +602,11 @@ export const Section4Certificate = styled.section`
   padding: 80px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   width: 100%;
   background-color: #f1ece6;
- 
-  
-  @media (max-width: 768px) {
+
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 0px;
-    padding-bottom: 60px; 
-     
+    padding-bottom: 60px;
   }
 
   @media (max-width: 430px) {
@@ -573,8 +623,8 @@ export const Section5Map = styled.section`
   align-items: center;
   padding: 80px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   width: 100%;
- 
-  @media (max-width: 768px) {
+
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 0px;
@@ -589,90 +639,83 @@ export const Section5Map = styled.section`
 `;
 
 export const MapAddressContainer = styled.div`
-display: flex;
-gap: 20px;
-margin-top: 50px;
-justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  justify-content: center;
 
   @media (max-width: 430px) {
-  flex-direction: column;
-  align-items: center;
-  
+    flex-direction: column;
+    align-items: center;
   }
-`
+`;
 
 export const AddressContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
- background-color: #f1ece6;
- border-radius: 10px;
- width: 295px;
- padding: 30px;
- gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1ece6;
+  border-radius: 10px;
+  width: 295px;
+  padding: 30px;
+  gap: 30px;
 
-   @media (max-width: 768px) {
-   height: 460px;
-   width: 335px;
+  @media (max-width: 1000px) {
+    height: 460px;
+    width: 335px;
   }
- 
+`;
 
-`
-    
 export const ContactBox = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-align-items: center;
-gap: 10px;
-
- 
-`
+  align-items: center;
+  gap: 10px;
+`;
 export const ContactTitle = styled.p`
- text-transform: uppercase;
+  text-transform: uppercase;
   font-family: LatoBold, sans-serif;
   text-decoration: none;
   color: #1d1715;
   font-size: 16px;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 0.00em;
+  letter-spacing: 0em;
   text-align: center;
-  color: #261E1C;
-`
+  color: #261e1c;
+`;
 export const ContactP = styled.p`
- font-family: LatoRegular, sans-serif;
+  font-family: LatoRegular, sans-serif;
   text-decoration: none;
   color: #1d1715;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 0.00em;
+  letter-spacing: 0em;
   text-align: center;
   white-space: pre-line;
-
-`
+`;
 
 export const ContactAddressP = styled.p`
- font-family: LatoRegular, sans-serif;
+  font-family: LatoRegular, sans-serif;
   text-decoration: none;
   color: #1d1715;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 0.00em;
+  letter-spacing: 0em;
   text-align: center;
   white-space: pre-line;
 
-      &:hover {
-    color: #AE9C96; 
-   
+  &:hover {
+    color: #ae9c96;
   }
-  `
+`;
 
-  export const EmailA = styled.a`
+export const EmailA = styled.a`
   cursor: pointer;
   font-family: LatoRegular, sans-serif;
   text-decoration: none;
@@ -681,32 +724,30 @@ export const ContactAddressP = styled.p`
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 0.00em;
+  letter-spacing: 0em;
   text-align: center;
   white-space: pre-line;
 
-      &:hover {
-    color: #AE9C96; 
-   
+  &:hover {
+    color: #ae9c96;
   }
-  `
+`;
 
 export const MapBox = styled.div`
-width: 925px;
-height: 460px;
+  width: 925px;
+  height: 460px;
 
-  @media (max-width: 768px) {
-   height: 460px;
-  width: 389px;
+  @media (max-width: 1000px) {
+    height: 460px;
+    width: 389px;
   }
-         @media (max-width: 430px) {
+  @media (max-width: 430px) {
     width: 335px;
   }
-`
+`;
 
 export const ContactPSocialMediaBox = styled.div`
-display: flex;
-gap: 10px;
-align-items: center;
-`
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`;

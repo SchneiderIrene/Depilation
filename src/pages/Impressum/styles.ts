@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
 
-
-
 export const DatenschutzContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,23 +9,21 @@ export const DatenschutzContainer = styled.div`
 `;
 
 export const TextSection = styled.section`
-
   display: flex;
   flex-direction: column;
- font-family: AbrilFatface-Regulark, sans-serif;
+  font-family: AbrilFatface-Regulark, sans-serif;
   align-items: left;
   justify-content: center;
   gap: 1.5vw;
- 
-  
+
   padding: 50px clamp(20px, 10.6vw, 200px) 80px clamp(20px, 10.6vw, 200px);
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 60px;
-      padding-top: 0;
+    padding-top: 0;
   }
 
   @media (max-width: 430px) {
@@ -74,7 +70,7 @@ export const TextPstyled = styled.p`
 `;
 
 export const TextBox = styled.div`
-display: flex;
-flex-direction: column;
-gap: 1vw;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+`;
