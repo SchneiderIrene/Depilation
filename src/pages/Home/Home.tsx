@@ -217,7 +217,8 @@ function Home() {
             nameButton1={t('card.button1')}
             nameButton2={t('card.button2')}
             // button1Href="/public/Депиляция.pdf" для локалки
-            button1Href="/Депиляция.pdf" // для деплоя
+            //button1Href="/Депиляция.pdf" // для деплоя статичный в проекте
+            button1Href="https://drive.google.com/file/d/1NbFmpwkI2vYWXtPbx6dlC-dM1DrG7B5l/view?usp=sharing" // для деплоя на Google Disk
             button2Href='https://buchung.treatwell.de/ort/perfect-skin-hamburg/'
           ></Card>
           <Card
@@ -227,7 +228,8 @@ function Home() {
             nameButton1={t('card.button1')}
             nameButton2={t('card.button2')}
             // button1Href="/public/Косметология.pdf" для локалки
-            button1Href="/Косметология.pdf"// для деплоя
+            //button1Href="/Косметология.pdf"// для деплоя статичный в проекте
+            button1Href="https://drive.google.com/file/d/1Dm6tt2S1rUoALHJ0cTjiZiUCm5rTgTi-/view?usp=sharing"// для деплоя на Google Disk
             button2Href='https://buchung.treatwell.de/ort/perfect-skin-hamburg/'
           ></Card>
           <Card
@@ -237,7 +239,8 @@ function Home() {
             nameButton1={t('card.button1')}
             nameButton2={t('card.button3')}
             //button1Href="/public/Базовый домашний уход.pdf" для локалки
-            button1Href="/Базовый домашний уход.pdf" // для деплоя
+            //button1Href="/Базовый домашний уход.pdf" // для деплоя статичный в проекте
+            button1Href="https://drive.google.com/file/d/1KH-Jtb3u5N5fIP0p0dwJTzWqYVZyauw7/view?usp=sharing" // для деплоя на Google Disk
             button2Href='https://t.me/kontakt_AliS'
           ></Card>
           <Card
@@ -247,7 +250,8 @@ function Home() {
             nameButton1={t('card.button4')}
             nameButton2={t('card.button5')}
             //button1Href="/public/Презентация_курса_по_депиляции_pdf_20251003_220443_0000.pdf" для локалки
-            button1Href="/Презентация_курса_по_депиляции_pdf_20251003_220443_0000.pdf" // для деплоя
+            //button1Href="/Презентация_курса_по_депиляции_pdf_20251003_220443_0000.pdf" // для деплоя статичный в проекте
+            button1Href="https://drive.google.com/file/d/14QiZqRreUs_XFDisnO-SHTRr5DudinZR/view?usp=sharing" // для деплоя на Google Disk
             button2Href='https://t.me/kontakt_AliS'
           ></Card>
         </CardContainer>
