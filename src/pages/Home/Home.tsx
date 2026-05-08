@@ -218,6 +218,7 @@ function Home() {
             nameButton2={t('card.button2')}
             // button1Href="/public/Депиляция.pdf" для локалки
             button1Href="/Депиляция.pdf" // для деплоя
+            button2Href='https://buchung.treatwell.de/ort/perfect-skin-hamburg/'
           ></Card>
           <Card
             title={t('card.card2.title')}
@@ -227,6 +228,7 @@ function Home() {
             nameButton2={t('card.button2')}
             // button1Href="/public/Косметология.pdf" для локалки
             button1Href="/Косметология.pdf"// для деплоя
+            button2Href='https://buchung.treatwell.de/ort/perfect-skin-hamburg/'
           ></Card>
           <Card
             title={t('card.card3.title')}
@@ -236,6 +238,7 @@ function Home() {
             nameButton2={t('card.button3')}
             //button1Href="/public/Базовый домашний уход.pdf" для локалки
             button1Href="/Базовый домашний уход.pdf" // для деплоя
+            button2Href='https://t.me/kontakt_AliS'
           ></Card>
           <Card
             title={t('card.card4.title')}
@@ -245,6 +248,7 @@ function Home() {
             nameButton2={t('card.button5')}
             //button1Href="/public/Презентация_курса_по_депиляции_pdf_20251003_220443_0000.pdf" для локалки
             button1Href="/Презентация_курса_по_депиляции_pdf_20251003_220443_0000.pdf" // для деплоя
+            button2Href='https://t.me/kontakt_AliS'
           ></Card>
         </CardContainer>
       </Section2>

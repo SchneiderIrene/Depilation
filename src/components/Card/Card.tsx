@@ -18,6 +18,7 @@ function Card({
   nameButton1,
   nameButton2,
   button1Href,
+  button2Href,
   button1Target = "_blank",
 }: CardProps) {
   return (
@@ -36,7 +37,7 @@ function Card({
         </StyledARoute>
         
         <StyledARoute
-          href="https://t.me/kontakt_AliS"
+          href={button2Href}
           target="_blank"
           rel="noopener noreferrer"
           role="button"
