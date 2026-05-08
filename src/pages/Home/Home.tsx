@@ -147,7 +147,8 @@ function Home() {
             </ContainerPMobile>
             <ButtonContainerTablett>
               <StyledARoute
-                href="https://koalendar.com/e/alina-depilation"
+                // href="https://koalendar.com/e/alina-depilation"
+                href="https://buchung.treatwell.de/ort/perfect-skin-hamburg/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -165,7 +166,8 @@ function Home() {
           <ButtonContainer>
             <ButtonBox>
               <StyledARoute
-                href="https://koalendar.com/e/alina-depilation"
+                //href="https://koalendar.com/e/alina-depilation"
+                href="https://buchung.treatwell.de/ort/perfect-skin-hamburg/"
                 target="_blank"
                 rel="noopener noreferrer"
                  
@@ -307,7 +309,8 @@ function Home() {
               </AboutMeDescription>
               <ButtonBoxSection3>
                 <ButtonBox><StyledARoute
-                href="https://koalendar.com/e/alina-depilation"
+                //href="https://koalendar.com/e/alina-depilation"
+                href="https://buchung.treatwell.de/ort/perfect-skin-hamburg/"
                 target="_blank"
                 rel="noopener noreferrer"
                 

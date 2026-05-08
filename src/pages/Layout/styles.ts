@@ -212,6 +212,8 @@ export const AddressContainer = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   gap: 20px;
+  align-items: center;
+
 
   @media (max-width: 430px) {
     gap: 10px;
