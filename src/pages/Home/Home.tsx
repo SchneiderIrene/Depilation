@@ -148,7 +148,7 @@ function Home() {
             <ButtonContainerTablett>
               <StyledARoute
                 // href="https://koalendar.com/e/alina-depilation"
-                href="https://buchung.treatwell.de/ort/perfect-skin-hamburg/"
+                href="https://trea.tw/BQtZqcbDWu73LDSBe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -167,7 +167,7 @@ function Home() {
             <ButtonBox>
               <StyledARoute
                 //href="https://koalendar.com/e/alina-depilation"
-                href="https://buchung.treatwell.de/ort/perfect-skin-hamburg/"
+                href="https://trea.tw/BQtZqcbDWu73LDSBe"
                 target="_blank"
                 rel="noopener noreferrer"
                  
@@ -219,7 +219,7 @@ function Home() {
             // button1Href="/public/Депиляция.pdf" для локалки
             //button1Href="/Депиляция.pdf" // для деплоя статичный в проекте
             button1Href="https://drive.google.com/file/d/1NbFmpwkI2vYWXtPbx6dlC-dM1DrG7B5l/view?usp=sharing" // для деплоя на Google Disk
-            button2Href='https://buchung.treatwell.de/ort/perfect-skin-hamburg/'
+            button2Href='https://trea.tw/BQtZqcbDWu73LDSBe'
           ></Card>
           <Card
             title={t('card.card2.title')}
@@ -230,7 +230,7 @@ function Home() {
             // button1Href="/public/Косметология.pdf" для локалки
             //button1Href="/Косметология.pdf"// для деплоя статичный в проекте
             button1Href="https://drive.google.com/file/d/1Dm6tt2S1rUoALHJ0cTjiZiUCm5rTgTi-/view?usp=sharing"// для деплоя на Google Disk
-            button2Href='https://buchung.treatwell.de/ort/perfect-skin-hamburg/'
+            button2Href='https://trea.tw/BQtZqcbDWu73LDSBe'
           ></Card>
           <Card
             title={t('card.card3.title')}
@@ -318,7 +318,7 @@ function Home() {
               <ButtonBoxSection3>
                 <ButtonBox><StyledARoute
                 //href="https://koalendar.com/e/alina-depilation"
-                href="https://buchung.treatwell.de/ort/perfect-skin-hamburg/"
+                href="https://trea.tw/BQtZqcbDWu73LDSBe"
                 target="_blank"
                 rel="noopener noreferrer"
                 
